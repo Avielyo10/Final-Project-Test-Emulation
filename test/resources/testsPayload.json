@@ -1,0 +1,57 @@
+{
+    "test": {
+      "numOfWorkers": 2,
+      "jobs": [9, 1, 5],
+      "learningFactor": 0
+    },
+    "test1": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5],
+        "learningFactor": -0.2
+    },
+    "test2": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5],
+        "learningFactor": -0.3
+    },
+    "test3": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5],
+        "learningFactor": -0.5
+    },
+    "test4": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5],
+        "learningFactor": -0.8
+    },
+    "test5": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5, 2, 5],
+        "learningFactor": 0
+    },
+    "test6": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5, 2, 5],
+        "learningFactor": -0.2
+    },
+    "test7": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5, 2, 5],
+        "learningFactor": -0.3
+    },
+    "test8": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5, 2, 5],
+        "learningFactor": -0.5
+    },
+    "test9": {
+        "numOfWorkers": 2,
+        "jobs": [9, 1, 5, 2, 5],
+        "learningFactor": -0.8
+    },
+    "test10": {
+        "numOfWorkers": 2,
+        "jobs": [2, 1, 7, 4, 5, 8, 2],
+        "learningFactor": -0.5
+    }
+}

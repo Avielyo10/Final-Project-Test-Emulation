@@ -1,27 +1,13 @@
-#include <bits/stdc++.h> 
-#include "strategy.cpp"
-#include "../worker.cpp"
+#include "completeSearchStrategy.hpp"
 
-using namespace std;
-
-class completeSearchStrategy : public strategy {
-private:
-    vector<vector<int>> permutation;
-    
-public:
-    completeSearchStrategy(int numOfWorkers, vector<int> jobs, float learningFactor): 
+completeSearchStrategy::completeSearchStrategy(int numOfWorkers, vector<int> jobs, float learningFactor): 
             strategy(numOfWorkers, jobs, learningFactor) {
         findPermutations();
-    }
+}
     
-    vector<vector<int>> getPermutations() {
-        return permutation;
-    }
-
-    void findPermutations();
-    void split();
-    vector<vector<int>> splitIntoSubVectors(int, int, vector<int>);
-};
+vector<vector<int>> completeSearchStrategy::getPermutations() {
+    return permutation;
+}
 
 void completeSearchStrategy::split() {
     int numOfWorkers = this -> getNumOfWorkers();
@@ -68,13 +54,13 @@ vector<vector<int>> completeSearchStrategy::splitIntoSubVectors(int numOfWorkers
     int index = 0;
 
     vector<vector<int>> bunches(numOfWorkers);
-	for(size_t i = 0; i < permutation.size(); i += bunchSize) { 
+    for(size_t i = 0; i < permutation.size(); i += bunchSize) { 
         remJobs--;
         if (remJobs == 0) bunchSize += 1;
-		auto last = min(permutation.size(), i + bunchSize);
-		auto& vec = bunches[index++];
-		vec.reserve(last - i);
-		move(permutation.begin() + i, permutation.begin() + last, back_inserter(vec));  
-	}
+        auto last = min(permutation.size(), i + bunchSize);
+        auto& vec = bunches[index++];
+        vec.reserve(last - i);
+        move(permutation.begin() + i, permutation.begin() + last, back_inserter(vec));  
+    }
     return bunches;
 }

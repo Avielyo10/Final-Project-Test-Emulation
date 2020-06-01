@@ -1,65 +1,53 @@
-#include <vector>
-#include <limits.h>
+#include "strategy.hpp"
 
 using namespace std;
 
-class strategy {
-private:
-    float cMax = INT_MAX;
-    vector<vector<int>> bestBunch;
-    float learningFactor;
-    int numOfWorkers;
-    vector<int> jobs;
-    
-public:
-    strategy(int numOfWorkers, vector<int> jobs, float learningFactor) {
-        this -> numOfWorkers = numOfWorkers;
-        this -> jobs = jobs;
-        this -> learningFactor = learningFactor;
-    } 
-    virtual void split() = 0;
+strategy::strategy(int numOfWorkers, vector<int> jobs, float learningFactor) {
+    this -> numOfWorkers = numOfWorkers;
+    this -> jobs = jobs;
+    this -> learningFactor = learningFactor;
+} 
 
-    const float getCMax() {
-        return cMax;
-    }
+const float strategy::getCMax() {
+    return cMax;
+}
 
-    void setCMax(float cMax) {
-        strategy::cMax = cMax;
-    }
+void strategy::setCMax(float cMax) {
+    strategy::cMax = cMax;
+}
 
-    const vector<vector<int>> getBestBunch() {
-        return bestBunch;
-    }
+const vector<vector<int>> strategy::getBestBunch() {
+    return bestBunch;
+}
 
-    void setBestBunch(vector<vector<int>> bestBunch) {
-        strategy::bestBunch = bestBunch;
-    }
+void strategy::setBestBunch(vector<vector<int>> bestBunch) {
+    strategy::bestBunch = bestBunch;
+}
 
-    const int getNumOfWorkers() {
-        return numOfWorkers;
-    }
+const int strategy::getNumOfWorkers() {
+    return numOfWorkers;
+}
 
-    void setNumOfWorkers(int numOfWorkers) {
-        strategy::numOfWorkers = numOfWorkers;
-    }
+void strategy::setNumOfWorkers(int numOfWorkers) {
+    strategy::numOfWorkers = numOfWorkers;
+}
 
-    const vector<int> getJobs() {
-        return jobs;
-    }
+const vector<int> strategy::getJobs() {
+    return jobs;
+}
 
-    void setJobs(vector<int> jobs) {
-        strategy::jobs = jobs;
-        strategy::jobs.shrink_to_fit();
-    }
+void strategy::setJobs(vector<int> jobs) {
+    strategy::jobs = jobs;
+    strategy::jobs.shrink_to_fit();
+}
 
-    const float getLearningFactor() {
-        return learningFactor;
-    }
+const float strategy::getLearningFactor() {
+    return learningFactor;
+}
 
-    void setLearningFactor(float learningFactor) {
-        strategy::learningFactor = learningFactor;
-    }
-};
+void strategy::setLearningFactor(float learningFactor) {
+    strategy::learningFactor = learningFactor;
+}
 
 ostream& operator<<(ostream& out, vector<vector<int>> permutations) {
     stringstream display;

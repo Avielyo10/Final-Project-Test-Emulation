@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include <nlohmann/json.hpp>
-#include "../src/worker.cpp"
-#include "../src/strategies/completeSearchStrategy.cpp"
+#include "../src/worker.hpp"
+#include "../src/strategies/completeSearchStrategy.hpp"
 
 using namespace std; 
 using json = nlohmann::json;

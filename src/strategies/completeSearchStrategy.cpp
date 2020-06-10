@@ -48,6 +48,10 @@ void completeSearchStrategy::findPermutations() {
     } while (next_permutation(jobs.begin(), jobs.end())); 
 }
 
+string completeSearchStrategy::getName() {
+    return "completeSearchStrategy";
+}
+
 vector<vector<int>> completeSearchStrategy::splitIntoSubVectors(int numOfWorkers, int numOfJobs, vector<int> permutation) {
     int remJobs = numOfWorkers - (numOfJobs % numOfWorkers);
     int bunchSize = numOfJobs / numOfWorkers;

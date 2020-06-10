@@ -17,6 +17,7 @@ private:
 public:
     strategy(int numOfWorkers, vector<int> jobs, float learningFactor);
     virtual void split() = 0;
+    virtual string getName() = 0;
     const float getCMax();
     void setCMax(float cMax);
     const vector<vector<int>> getBestBunch();

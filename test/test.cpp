@@ -12,15 +12,19 @@ int main() {
     testsPayload >> tests;
 
     for (auto& test: tests) {
-        cout << "Testing completeSearchStrategyTest: " << test << endl;
         int numOfWorkers = test["numOfWorkers"].get<int>();
         float learningFactor = test["learningFactor"].get<float>();
         vector<int> jobs = test["jobs"].get<vector<int>>();
         
-        completeSearchStrategy css = completeSearchStrategy(numOfWorkers, jobs, learningFactor);
-        css.split();
-        cout << "CMAX = " << css.getCMax() 
-            << "\nBEST BUNCH = " << css.getBestBunch() << endl << endl;
+        vector<shared_ptr<strategy>> strategies;
+        strategies.push_back(shared_ptr<strategy>(new completeSearchStrategy(numOfWorkers, jobs, learningFactor)));
+        
+        for (auto& strategy: strategies){
+            cout << "Testing " << strategy->getName() << ": "<< test << endl;
+            strategy->split();
+            cout << "CMAX = " << strategy->getCMax() 
+                << "\nBEST BUNCH = " << strategy->getBestBunch() << endl << endl;
+        }
     }   
     return 0;
 }

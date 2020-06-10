@@ -15,5 +15,6 @@ public:
     vector<vector<int>> getPermutations();
     void findPermutations();
     void split();
+    string getName();
     vector<vector<int>> splitIntoSubVectors(int, int, vector<int>);
 };

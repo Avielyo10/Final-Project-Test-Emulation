@@ -1,17 +1,16 @@
 #pragma once
 
 #include <bits/stdc++.h> 
-#include "strategy.hpp"
-#include "../worker.hpp"
+#include "Strategy.hpp"
 
 using namespace std;
 
-class completeSearchStrategy : public strategy {
+class CompleteSearchStrategy : public Strategy {
 private:
     vector<vector<int>> permutation;
     
 public:
-    completeSearchStrategy(int, vector<int>, float);
+    CompleteSearchStrategy(int, vector<int>, float);
     vector<vector<int>> getPermutations();
     void findPermutations();
     void split();

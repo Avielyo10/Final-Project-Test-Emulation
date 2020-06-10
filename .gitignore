@@ -1,1 +1,3 @@
 .vscode/
+*.o
+emulation.out

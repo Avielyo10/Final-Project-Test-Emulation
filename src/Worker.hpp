@@ -5,11 +5,11 @@
 
 using namespace std;
 
-class worker {
+class Worker {
 private:
     vector<int> jobs;
 
 public:
-    worker(vector<int>);
+    Worker(vector<int>);
     float work(const float);
 };

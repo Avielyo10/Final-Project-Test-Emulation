@@ -1,15 +1,15 @@
-#include "completeSearchStrategy.hpp"
+#include "CompleteSearchStrategy.hpp"
 
-completeSearchStrategy::completeSearchStrategy(int numOfWorkers, vector<int> jobs, float learningFactor): 
-            strategy(numOfWorkers, jobs, learningFactor) {
-        findPermutations();
-}
+CompleteSearchStrategy::CompleteSearchStrategy(int numOfWorkers, vector<int> jobs, float learningFactor)
+    : Strategy(numOfWorkers, jobs, learningFactor) {}
     
-vector<vector<int>> completeSearchStrategy::getPermutations() {
+vector<vector<int>> CompleteSearchStrategy::getPermutations() {
     return permutation;
 }
 
-void completeSearchStrategy::split() {
+void CompleteSearchStrategy::split() {
+    findPermutations();
+    
     int numOfWorkers = this -> getNumOfWorkers();
     vector<vector<int>> permutations = this -> getPermutations();
     int numOfJobs = permutations.at(0).size();
@@ -24,9 +24,8 @@ void completeSearchStrategy::split() {
         for (auto permutation: permutations) {
             vector<vector<int>> bunches = splitIntoSubVectors(numOfWorkers, numOfJobs, permutation);
             float tmpCMax = INT_MIN;
-            // cout << display(bunches);
             for(auto const& job : bunches) {
-	            float cMaxFromWorker = worker(job).work(this -> getLearningFactor());
+	            float cMaxFromWorker = Worker(job).work(this -> getLearningFactor());
                 if (cMaxFromWorker > tmpCMax) tmpCMax = cMaxFromWorker;
 	        }
             if (tmpCMax < cMax) {
@@ -39,7 +38,7 @@ void completeSearchStrategy::split() {
     this -> setCMax(cMax);
 }
 
-void completeSearchStrategy::findPermutations() {
+void CompleteSearchStrategy::findPermutations() {
     vector<int> jobs = this -> getJobs();
 
     sort(jobs.begin(), jobs.end());
@@ -48,7 +47,11 @@ void completeSearchStrategy::findPermutations() {
     } while (next_permutation(jobs.begin(), jobs.end())); 
 }
 
-vector<vector<int>> completeSearchStrategy::splitIntoSubVectors(int numOfWorkers, int numOfJobs, vector<int> permutation) {
+string CompleteSearchStrategy::getName() {
+    return "CompleteSearchStrategy";
+}
+
+vector<vector<int>> CompleteSearchStrategy::splitIntoSubVectors(int numOfWorkers, int numOfJobs, vector<int> permutation) {
     int remJobs = numOfWorkers - (numOfJobs % numOfWorkers);
     int bunchSize = numOfJobs / numOfWorkers;
     int index = 0;

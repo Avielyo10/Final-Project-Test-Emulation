@@ -3,10 +3,11 @@
 #include <vector>
 #include <limits.h>
 #include <bits/stdc++.h>
+#include "../Worker.hpp"
 
 using namespace std;
 
-class strategy {
+class Strategy {
 private:
     float cMax = INT_MAX;
     vector<vector<int>> bestBunch;
@@ -15,8 +16,9 @@ private:
     vector<int> jobs;
     
 public:
-    strategy(int numOfWorkers, vector<int> jobs, float learningFactor);
+    Strategy(int numOfWorkers, vector<int> jobs, float learningFactor);
     virtual void split() = 0;
+    virtual string getName() = 0;
     const float getCMax();
     void setCMax(float cMax);
     const vector<vector<int>> getBestBunch();

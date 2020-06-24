@@ -9,7 +9,7 @@ void DPStrategy2Machines::split() {
     vector<int>::size_type numOfJobs = jobs.size();
     sort(jobs.begin(), jobs.end());
 
-    if (numOfWorkers >= numOfJobs) {
+    if (numOfWorkers >= numOfJobs) { // more workers than jobs - easy case
         vector<vector<int>> bestBunch;
         vector<int> bunch;
         for (vector<int>::size_type i = 0; i < numOfWorkers; ++i) {
@@ -21,8 +21,8 @@ void DPStrategy2Machines::split() {
         this->setCMax(jobs.back());
         return;
     }
+
     vector<vector<float>> costMap = getCostMap(jobs);
-    
     vector<vector<vector<Bin>>> map 
         (numOfJobs + 1, vector<vector<Bin>>(numOfJobs, vector<Bin>(1, Bin())));
     // init
@@ -32,20 +32,18 @@ void DPStrategy2Machines::split() {
     initFirstRow(map, costMap, jobs, numOfJobs);
     initFirstColumn(map, costMap, jobs, numOfJobs);
     
+    Bin bestBin;
     // DP algorithm
     for (long unsigned int i = 2; i < numOfJobs + 1; ++i) {
         for (long unsigned int j = 1; j < numOfJobs; ++j) {
             if (i + j <= numOfJobs) {
                 vector<Bin> binCollection;
-                addBinsFromLeft(binCollection, map, costMap, jobs, i, j);
-                addBinsFromTop(binCollection, map, costMap, jobs, i, j);
+                addBinsFromLeft(binCollection, map, costMap, jobs, bestBin, i, j);
+                addBinsFromTop(binCollection, map, costMap, jobs, bestBin, i, j);
                 map.at(i).at(j) = binCollection;
             }
         }
     }
-
-    // get bestBin that contains the correct answer
-    Bin bestBin = getBestBinFromMap(map, numOfJobs);
     this->setCMax(bestBin.getCmax());
     this->setBestBunch(bestBin.getBunches());
 }
@@ -98,29 +96,8 @@ void DPStrategy2Machines::initFirstColumn(vector<vector<vector<Bin>>>& map,
     }
 }
 
-Bin DPStrategy2Machines::getBestBinFromMap(vector<vector<vector<Bin>>>& map, int numOfJobs) {
-    Bin bestBin;
-    if (numOfJobs % 2 != 0){ // odd
-        int i = numOfJobs / 2;
-        int j = i + 1;
-        for (auto& bin: map.at(i).at(j)) {
-            if(bin < bestBin) bestBin = bin;
-        }
-        for (auto& bin: map.at(j).at(i)) {
-            if(bin < bestBin) bestBin = bin;
-        }
-    }
-    else { // even
-        int i = numOfJobs / 2;
-        for (auto& bin: map.at(i).at(i)) {
-            if(bin < bestBin) bestBin = bin;
-        }
-    }
-    return bestBin;
-}
-
 void DPStrategy2Machines::addBinsFromLeft(vector<Bin>& binCollection, vector<vector<vector<Bin>>>& map, 
-    vector<vector<float>>& costMap, vector<int>& jobs,
+    vector<vector<float>>& costMap, vector<int>& jobs, Bin& bestBin,
     long unsigned int i, long unsigned int j) {
     for (auto& bin: map.at(i).at(j - 1)) {
         float cmax1 = bin.getCmax1();
@@ -132,12 +109,13 @@ void DPStrategy2Machines::addBinsFromLeft(vector<Bin>& binCollection, vector<vec
 
         tmpBin.setM1BestBunch(bin.getM1BestBunch());
         tmpBin.setM2BestBunch(m2BestBunch);
-        binCollection.push_back(tmpBin);
+        if((i + j == jobs.size()) && tmpBin < bestBin) bestBin = tmpBin;
+        else binCollection.push_back(tmpBin);
     }
 }
 
 void DPStrategy2Machines::addBinsFromTop(vector<Bin>& binCollection, vector<vector<vector<Bin>>>& map, 
-    vector<vector<float>>& costMap, vector<int>& jobs,
+    vector<vector<float>>& costMap, vector<int>& jobs, Bin& bestBin,
     long unsigned int i, long unsigned int j) {
     for (auto& bin: map.at(i - 1).at(j)) {
         float cmax1 = bin.getCmax1() + costMap.at(i - 1).at(i + j - 1);
@@ -149,6 +127,7 @@ void DPStrategy2Machines::addBinsFromTop(vector<Bin>& binCollection, vector<vect
 
         tmpBin.setM1BestBunch(m1BestBunch);
         tmpBin.setM2BestBunch(bin.getM2BestBunch());
-        binCollection.push_back(tmpBin);
+        if((i + j == jobs.size()) && tmpBin < bestBin) bestBin = tmpBin;
+        else binCollection.push_back(tmpBin);
     }
 }

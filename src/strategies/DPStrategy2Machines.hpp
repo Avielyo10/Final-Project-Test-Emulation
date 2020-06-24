@@ -66,12 +66,11 @@ public:
         vector<vector<float>>&, vector<int>&, long unsigned int);
     void initFirstColumn(vector<vector<vector<Bin>>>&, 
         vector<vector<float>>&, vector<int>&, long unsigned int);
-    Bin getBestBinFromMap(vector<vector<vector<Bin>>>&, int);
     vector<vector<float>> getCostMap(vector<int>);
     void addBinsFromLeft(vector<Bin>&, vector<vector<vector<Bin>>>&, 
-        vector<vector<float>>&, vector<int>&,
+        vector<vector<float>>&, vector<int>&, Bin&,
         long unsigned int, long unsigned int);
     void addBinsFromTop(vector<Bin>&, vector<vector<vector<Bin>>>&, 
-        vector<vector<float>>&, vector<int>&,
+        vector<vector<float>>&, vector<int>&, Bin&,
         long unsigned int, long unsigned int);
 };

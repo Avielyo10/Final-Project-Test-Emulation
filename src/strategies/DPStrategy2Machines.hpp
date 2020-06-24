@@ -5,14 +5,6 @@
 
 using namespace std;
 
-class DPStrategy2Machines : public Strategy {
-public:
-    DPStrategy2Machines(int, vector<int>, float);
-    void split();
-    string getName();
-    vector<vector<float>> getCostMap(vector<int>);
-};
-
 struct Bin {
     pair<float, float> cmax;
     vector<vector<int>> bunches;
@@ -63,4 +55,23 @@ struct Bin {
         return out << "Bin(cmax1 = " << bin.getCmax1() << 
             ", cmax2 = " << bin.getCmax2() << ")";
     }
+};
+
+class DPStrategy2Machines : public Strategy {
+public:
+    DPStrategy2Machines(int, vector<int>, float);
+    void split();
+    string getName();
+    void initFirstRow(vector<vector<vector<Bin>>>&, 
+        vector<vector<float>>&, vector<int>&, long unsigned int);
+    void initFirstColumn(vector<vector<vector<Bin>>>&, 
+        vector<vector<float>>&, vector<int>&, long unsigned int);
+    Bin getBestBinFromMap(vector<vector<vector<Bin>>>&, int);
+    vector<vector<float>> getCostMap(vector<int>);
+    void addBinsFromLeft(vector<Bin>&, vector<vector<vector<Bin>>>&, 
+        vector<vector<float>>&, vector<int>&,
+        long unsigned int, long unsigned int);
+    void addBinsFromTop(vector<Bin>&, vector<vector<vector<Bin>>>&, 
+        vector<vector<float>>&, vector<int>&,
+        long unsigned int, long unsigned int);
 };

@@ -23,12 +23,12 @@ void DPStrategy2Machines::split() {
     }
 
     vector<vector<float>> costMap = getCostMap(jobs);
-    vector<vector<vector<Bin>>> map 
-        (numOfJobs + 1, vector<vector<Bin>>(numOfJobs, vector<Bin>(1, Bin())));
+    vector<vector<BinCollection>> map 
+        (numOfJobs + 1, vector<BinCollection>(numOfJobs, BinCollection(1, Bin())));
     // init
     Bin initBin (make_pair(jobs.at(0), 0));
     initBin.setM1BestBunch(vector<int> (1, jobs.at(0)));
-    map.at(1).at(0) = vector<Bin> { initBin };
+    map.at(1).at(0) = BinCollection { initBin };
     initFirstRow(map, costMap, jobs, numOfJobs);
     initFirstColumn(map, costMap, jobs, numOfJobs);
     
@@ -37,7 +37,7 @@ void DPStrategy2Machines::split() {
     for (long unsigned int i = 2; i < numOfJobs + 1; ++i) {
         for (long unsigned int j = 1; j < numOfJobs; ++j) {
             if (i + j <= numOfJobs) {
-                vector<Bin> binCollection;
+                BinCollection binCollection;
                 addBinsFromLeft(binCollection, map, costMap, jobs, bestBin, i, j);
                 addBinsFromTop(binCollection, map, costMap, jobs, bestBin, i, j);
                 map.at(i).at(j) = binCollection;
@@ -72,7 +72,7 @@ vector<vector<float>> DPStrategy2Machines::getCostMap(vector<int> jobs) {
     return jobsMap;
 }
 
-void DPStrategy2Machines::initFirstRow(vector<vector<vector<Bin>>>& map, 
+void DPStrategy2Machines::initFirstRow(vector<vector<BinCollection>>& map, 
     vector<vector<float>>& costMap, vector<int>& jobs, long unsigned int numOfJobs){
     for (long unsigned int j = 1; j < numOfJobs; ++j) {
         Bin tmpBin (make_pair(jobs.at(0), map.at(1).at(j - 1).at(0).getCmax2() + costMap.at(j - 1).at(j)));
@@ -80,11 +80,11 @@ void DPStrategy2Machines::initFirstRow(vector<vector<vector<Bin>>>& map,
         m2BestBunch.push_back(jobs.at(j));
         tmpBin.setM1BestBunch(vector<int> (1, jobs.at(0)));
         tmpBin.setM2BestBunch(m2BestBunch);
-        map.at(1).at(j) = vector<Bin> { tmpBin };
+        map.at(1).at(j) = BinCollection { tmpBin };
     }
 }
 
-void DPStrategy2Machines::initFirstColumn(vector<vector<vector<Bin>>>& map, 
+void DPStrategy2Machines::initFirstColumn(vector<vector<BinCollection>>& map, 
     vector<vector<float>>& costMap, vector<int>& jobs, long unsigned int numOfJobs){
     for (long unsigned int i = 2; i < numOfJobs + 1; ++i) {
         Bin tmpBin (make_pair(map.at(i - 1).at(0).at(0).getCmax1() + costMap.at(i - 1).at(i - 1), 0));
@@ -92,11 +92,11 @@ void DPStrategy2Machines::initFirstColumn(vector<vector<vector<Bin>>>& map,
         m1BestBunch.push_back(jobs.at(i - 1));
         tmpBin.setM1BestBunch(m1BestBunch);
         tmpBin.setM2BestBunch(vector<int> (0));
-        map.at(i).at(0) = vector<Bin> { tmpBin };
+        map.at(i).at(0) = BinCollection { tmpBin };
     }
 }
 
-void DPStrategy2Machines::addBinsFromLeft(vector<Bin>& binCollection, vector<vector<vector<Bin>>>& map, 
+void DPStrategy2Machines::addBinsFromLeft(BinCollection& binCollection, vector<vector<BinCollection>>& map, 
     vector<vector<float>>& costMap, vector<int>& jobs, Bin& bestBin,
     long unsigned int i, long unsigned int j) {
     for (auto& bin: map.at(i).at(j - 1)) {
@@ -110,11 +110,11 @@ void DPStrategy2Machines::addBinsFromLeft(vector<Bin>& binCollection, vector<vec
         tmpBin.setM1BestBunch(bin.getM1BestBunch());
         tmpBin.setM2BestBunch(m2BestBunch);
         if((i + j == jobs.size()) && tmpBin < bestBin) bestBin = tmpBin;
-        else binCollection.push_back(tmpBin);
+        else binCollection.addBin(tmpBin);
     }
 }
 
-void DPStrategy2Machines::addBinsFromTop(vector<Bin>& binCollection, vector<vector<vector<Bin>>>& map, 
+void DPStrategy2Machines::addBinsFromTop(BinCollection& binCollection, vector<vector<BinCollection>>& map, 
     vector<vector<float>>& costMap, vector<int>& jobs, Bin& bestBin,
     long unsigned int i, long unsigned int j) {
     for (auto& bin: map.at(i - 1).at(j)) {
@@ -128,6 +128,6 @@ void DPStrategy2Machines::addBinsFromTop(vector<Bin>& binCollection, vector<vect
         tmpBin.setM1BestBunch(m1BestBunch);
         tmpBin.setM2BestBunch(bin.getM2BestBunch());
         if((i + j == jobs.size()) && tmpBin < bestBin) bestBin = tmpBin;
-        else binCollection.push_back(tmpBin);
+        else binCollection.addBin(tmpBin);
     }
 }

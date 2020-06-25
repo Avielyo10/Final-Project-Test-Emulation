@@ -33,7 +33,7 @@ void DPStrategy2Machines::split() {
     initFirstColumn(map, costMap, jobs, numOfJobs);
     
     Bin bestBin;
-    // // DP algorithm
+    // DP algorithm
     for (long unsigned int i = 2; i < numOfJobs + 1; ++i) {
         for (long unsigned int j = 1; j < numOfJobs; ++j) {
             if (i + j <= numOfJobs) {

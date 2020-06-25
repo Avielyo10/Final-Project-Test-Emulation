@@ -57,20 +57,41 @@ struct Bin {
     }
 };
 
+struct BinCollection {
+    vector<Bin> collection;
+    BinCollection() = default;
+    BinCollection(int sz, const Bin& bin) : collection(sz, bin) {}
+    BinCollection(initializer_list<Bin> lst) : collection (lst.size()) {
+        copy(lst.begin(), lst.end(), collection.begin());
+    }
+    void addBin(const Bin& bin) {
+        collection.push_back(bin);
+    }
+    Bin at(int index){
+        return collection.at(index);
+    }
+    vector<Bin>::iterator begin(){
+        return collection.begin();
+    }
+    vector<Bin>::iterator end(){
+        return collection.end();
+    }
+};
+
 class DPStrategy2Machines : public Strategy {
 public:
     DPStrategy2Machines(int, vector<int>, float);
     void split();
     string getName();
-    void initFirstRow(vector<vector<vector<Bin>>>&, 
+    void initFirstRow(vector<vector<BinCollection>>&, 
         vector<vector<float>>&, vector<int>&, long unsigned int);
-    void initFirstColumn(vector<vector<vector<Bin>>>&, 
+    void initFirstColumn(vector<vector<BinCollection>>&, 
         vector<vector<float>>&, vector<int>&, long unsigned int);
     vector<vector<float>> getCostMap(vector<int>);
-    void addBinsFromLeft(vector<Bin>&, vector<vector<vector<Bin>>>&, 
+    void addBinsFromLeft(BinCollection&, vector<vector<BinCollection>>&, 
         vector<vector<float>>&, vector<int>&, Bin&,
         long unsigned int, long unsigned int);
-    void addBinsFromTop(vector<Bin>&, vector<vector<vector<Bin>>>&, 
+    void addBinsFromTop(BinCollection&, vector<vector<BinCollection>>&, 
         vector<vector<float>>&, vector<int>&, Bin&,
         long unsigned int, long unsigned int);
 };

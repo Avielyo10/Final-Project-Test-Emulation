@@ -53,5 +53,10 @@
         "numOfWorkers": 2,
         "jobs": [2, 1, 7, 4, 5, 8, 2],
         "learningFactor": -0.5
+    },
+    "bigDataSet": {
+        "numOfWorkers": 2,
+        "jobs": [10, 1, 2, 1, 7, 4, 5, 8, 2, 11, 13],
+        "learningFactor": -0.8
     }
 }

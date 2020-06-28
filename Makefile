@@ -15,11 +15,12 @@ DPStrategy2Machines.o: src/strategies/DPStrategy2Machines.cpp
 Worker.o: src/Worker.cpp
 	@$(CXX) $(CXXFLAGS) -c src/Worker.cpp -o Worker.o
 
-test.o: test/test.cpp test/resources/testsPayload.json
+test.o: test/test.cpp test/resources/testsPayload.json test/resources/testsGen.py
 	@$(CXX) $(CXXFLAGS) -c test/test.cpp -o test.o
 
 compileTest: Strategy.o CompleteSearchStrategy.o DPStrategy2Machines.o Worker.o test.o
 	@$(CXX) $(CXXFLAGS) -o emulation.out Strategy.o CompleteSearchStrategy.o DPStrategy2Machines.o Worker.o test.o
+	@python test/resources/testsGen.py
 	@./emulation.out
 
 clean:

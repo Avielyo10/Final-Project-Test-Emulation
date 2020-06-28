@@ -99,6 +99,7 @@ void DPStrategy2Machines::initFirstColumn(vector<vector<BinCollection>>& map,
 void DPStrategy2Machines::addBinsFromLeft(BinCollection& binCollection, vector<vector<BinCollection>>& map, 
     vector<vector<float>>& costMap, vector<int>& jobs, Bin& bestBin,
     long unsigned int i, long unsigned int j) {
+    bool valid = i + j == jobs.size() && abs(int (i - j)) <= 1;
     for (auto& bin: map.at(i).at(j - 1)) {
         float cmax1 = bin.getCmax1();
         float cmax2 = bin.getCmax2() + costMap.at(j - 1).at(i + j - 1);
@@ -109,7 +110,7 @@ void DPStrategy2Machines::addBinsFromLeft(BinCollection& binCollection, vector<v
 
         tmpBin.setM1BestBunch(bin.getM1BestBunch());
         tmpBin.setM2BestBunch(m2BestBunch);
-        if((i + j == jobs.size()) && tmpBin < bestBin) bestBin = tmpBin;
+        if(valid && tmpBin < bestBin) bestBin = tmpBin;
         else binCollection.addBin(tmpBin);
     }
 }
@@ -117,6 +118,7 @@ void DPStrategy2Machines::addBinsFromLeft(BinCollection& binCollection, vector<v
 void DPStrategy2Machines::addBinsFromTop(BinCollection& binCollection, vector<vector<BinCollection>>& map, 
     vector<vector<float>>& costMap, vector<int>& jobs, Bin& bestBin,
     long unsigned int i, long unsigned int j) {
+    bool valid = i + j == jobs.size() && abs(int (i - j)) <= 1;
     for (auto& bin: map.at(i - 1).at(j)) {
         float cmax1 = bin.getCmax1() + costMap.at(i - 1).at(i + j - 1);
         float cmax2 = bin.getCmax2();
@@ -127,7 +129,7 @@ void DPStrategy2Machines::addBinsFromTop(BinCollection& binCollection, vector<ve
 
         tmpBin.setM1BestBunch(m1BestBunch);
         tmpBin.setM2BestBunch(bin.getM2BestBunch());
-        if((i + j == jobs.size()) && tmpBin < bestBin) bestBin = tmpBin;
+        if(valid && tmpBin < bestBin) bestBin = tmpBin;
         else binCollection.addBin(tmpBin);
     }
 }

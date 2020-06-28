@@ -2,49 +2,34 @@
 
 CompleteSearchStrategy::CompleteSearchStrategy(int numOfWorkers, vector<int> jobs, float learningFactor)
     : Strategy(numOfWorkers, jobs, learningFactor) {}
-    
-vector<vector<int>> CompleteSearchStrategy::getPermutations() {
-    return permutation;
-}
 
 void CompleteSearchStrategy::split() {
-    findPermutations();
-    
+    vector<int> jobs = this -> getJobs();
     int numOfWorkers = this -> getNumOfWorkers();
-    vector<vector<int>> permutations = this -> getPermutations();
-    int numOfJobs = permutations.at(0).size();
+    int numOfJobs = jobs.size();
     float cMax = INT_MAX;
     vector<vector<int>> bestBunch;
 
     if (numOfWorkers >= numOfJobs) {
-        vector<int> firstPermutation = permutations.at(0);
-        cMax = *max_element(firstPermutation.begin(), firstPermutation.end());
+        cMax = *max_element(jobs.begin(), jobs.end());
     }
     else {
-        for (auto permutation: permutations) {
-            vector<vector<int>> bunches = splitIntoSubVectors(numOfWorkers, numOfJobs, permutation);
+        sort(jobs.begin(), jobs.end());
+        do {
+            vector<vector<int>> bunches = splitIntoSubVectors(numOfWorkers, numOfJobs, jobs);
             float tmpCMax = INT_MIN;
             for(auto const& job : bunches) {
-	            float cMaxFromWorker = Worker(job).work(this -> getLearningFactor());
+                float cMaxFromWorker = Worker(job).work(this -> getLearningFactor());
                 if (cMaxFromWorker > tmpCMax) tmpCMax = cMaxFromWorker;
-	        }
+            }
             if (tmpCMax < cMax) {
                 cMax = tmpCMax;
                 bestBunch = bunches;
             }
-        }
+        } while (next_permutation(jobs.begin(), jobs.end())); 
     }
     this -> setBestBunch(bestBunch);
     this -> setCMax(cMax);
-}
-
-void CompleteSearchStrategy::findPermutations() {
-    vector<int> jobs = this -> getJobs();
-
-    sort(jobs.begin(), jobs.end());
-    do { 
-        permutation.push_back(jobs);
-    } while (next_permutation(jobs.begin(), jobs.end())); 
 }
 
 string CompleteSearchStrategy::getName() {

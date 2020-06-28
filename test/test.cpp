@@ -12,6 +12,7 @@ int main() {
     json tests;
     ifstream testsPayload("test/resources/testsPayload.json");
     testsPayload >> tests;
+    int passed = 0, failed = 0;
 
     for (auto& test: tests) {
         int numOfWorkers = test["numOfWorkers"].get<int>();
@@ -22,6 +23,7 @@ int main() {
         strategies.push_back(make_shared<CompleteSearchStrategy>(numOfWorkers, jobs, learningFactor));
         strategies.push_back(make_shared<DPStrategy2Machines>(numOfWorkers, jobs, learningFactor));
         
+        vector<vector<int>> tmpBunches;
         for (auto& strategy: strategies){
             cout << "Testing " << strategy->getName() << ": "<< test << endl;
             high_resolution_clock::time_point startSplit = high_resolution_clock::now();
@@ -31,7 +33,23 @@ int main() {
             cout << "CMAX = " << strategy->getCMax() 
                 << "\nBEST BUNCH = " << strategy->getBestBunch() 
                 << "\nDURATION (milliseconds) = " << timeSpan.count() * 1000 << endl << endl;
+            if (!strategy->getName().find("CompleteSearchStrategy")) 
+                tmpBunches = strategy->getBestBunch();
+            else {
+                if (strategy->getBestBunch()[0] == tmpBunches[0] || 
+                    strategy->getBestBunch()[0] == tmpBunches[1]) { 
+                    passed++;
+                    cout << "PASSED!" << endl;
+                }
+                else {
+                    failed++;
+                    cout << "FAILED!" << endl;
+                }
+            }
         }
+        cout << string(80, '-') << endl;
     }   
-    return 0;
+    cout << "PASSED: " << passed << "/" << tests.size() 
+        << ", FAILED: " << failed << "/" << tests.size() << endl;
+    return tests.size() - passed;
 }

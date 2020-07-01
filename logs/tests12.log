@@ -1,0 +1,1202 @@
+nohup: ignoring input
+Testing CompleteSearchStrategy: {"jobs":[89,123,283,170,291,125,147,211,23,129,250,213],"learningFactor":-0.44906,"numOfWorkers":2}
+CMAX = 575.151
+BEST BUNCH = {[23, 125, 129, 213, 283, 291], [89, 123, 147, 170, 211, 250]}
+DURATION (milliseconds) = 1.51508e+06
+
+Testing DPStrategy2Machines: {"jobs":[89,123,283,170,291,125,147,211,23,129,250,213],"learningFactor":-0.44906,"numOfWorkers":2}
+CMAX = 575.151
+BEST BUNCH = {[23, 125, 129, 213, 283, 291], [89, 123, 147, 170, 211, 250]}
+DURATION (milliseconds) = 14.5279
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[90,193,105,226,150,259,99,93,175,237,266,110],"learningFactor":-0.53113,"numOfWorkers":2}
+CMAX = 522.972
+BEST BUNCH = {[90, 99, 150, 175, 226, 259], [93, 105, 110, 193, 237, 266]}
+DURATION (milliseconds) = 1.51916e+06
+
+Testing DPStrategy2Machines: {"jobs":[90,193,105,226,150,259,99,93,175,237,266,110],"learningFactor":-0.53113,"numOfWorkers":2}
+CMAX = 522.972
+BEST BUNCH = {[90, 99, 150, 175, 226, 259], [93, 105, 110, 193, 237, 266]}
+DURATION (milliseconds) = 14.0375
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[18,204,56,221,40,258,6,156,193,229,157,241],"learningFactor":-0.26567,"numOfWorkers":2}
+CMAX = 607.983
+BEST BUNCH = {[6, 56, 157, 193, 221, 258], [18, 40, 156, 204, 229, 241]}
+DURATION (milliseconds) = 1.52878e+06
+
+Testing DPStrategy2Machines: {"jobs":[18,204,56,221,40,258,6,156,193,229,157,241],"learningFactor":-0.26567,"numOfWorkers":2}
+CMAX = 607.983
+BEST BUNCH = {[6, 56, 157, 193, 221, 258], [18, 40, 156, 204, 229, 241]}
+DURATION (milliseconds) = 14.0671
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[238,263,265,58,83,117,237,87,213,150,147,269],"learningFactor":-0.43012,"numOfWorkers":2}
+CMAX = 611.768
+BEST BUNCH = {[58, 117, 150, 213, 263, 269], [83, 87, 147, 237, 238, 265]}
+DURATION (milliseconds) = 1.54755e+06
+
+Testing DPStrategy2Machines: {"jobs":[238,263,265,58,83,117,237,87,213,150,147,269],"learningFactor":-0.43012,"numOfWorkers":2}
+CMAX = 611.768
+BEST BUNCH = {[58, 117, 150, 213, 263, 269], [83, 87, 147, 237, 238, 265]}
+DURATION (milliseconds) = 14.0214
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[21,232,84,118,22,246,195,227,147,242,271,220],"learningFactor":-0.47921,"numOfWorkers":2}
+CMAX = 529.411
+BEST BUNCH = {[21, 84, 195, 227, 242, 246], [22, 118, 147, 220, 232, 271]}
+DURATION (milliseconds) = 1.51657e+06
+
+Testing DPStrategy2Machines: {"jobs":[21,232,84,118,22,246,195,227,147,242,271,220],"learningFactor":-0.47921,"numOfWorkers":2}
+CMAX = 529.411
+BEST BUNCH = {[21, 84, 195, 227, 242, 246], [22, 118, 147, 220, 232, 271]}
+DURATION (milliseconds) = 14.2168
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[61,267,93,125,169,22,205,164,277,5,109,55],"learningFactor":-0.30777,"numOfWorkers":2}
+CMAX = 497.929
+BEST BUNCH = {[5, 55, 109, 164, 169, 277], [22, 61, 93, 125, 205, 267]}
+DURATION (milliseconds) = 1.55072e+06
+
+Testing DPStrategy2Machines: {"jobs":[61,267,93,125,169,22,205,164,277,5,109,55],"learningFactor":-0.30777,"numOfWorkers":2}
+CMAX = 497.929
+BEST BUNCH = {[5, 55, 109, 164, 169, 277], [22, 61, 93, 125, 205, 267]}
+DURATION (milliseconds) = 14.5467
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[124,157,125,297,62,63,144,26,135,33,143,213],"learningFactor":-0.91559,"numOfWorkers":2}
+CMAX = 232.501
+BEST BUNCH = {[26, 62, 124, 135, 143, 297], [33, 63, 125, 144, 157, 213]}
+DURATION (milliseconds) = 1.5254e+06
+
+Testing DPStrategy2Machines: {"jobs":[124,157,125,297,62,63,144,26,135,33,143,213],"learningFactor":-0.91559,"numOfWorkers":2}
+CMAX = 232.501
+BEST BUNCH = {[26, 62, 124, 135, 143, 297], [33, 63, 125, 144, 157, 213]}
+DURATION (milliseconds) = 14.2092
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[250,207,67,239,41,252,288,277,247,177,273,183],"learningFactor":-0.05666,"numOfWorkers":2}
+CMAX = 1162.04
+BEST BUNCH = {[41, 183, 247, 250, 252, 277], [67, 177, 207, 239, 273, 288]}
+DURATION (milliseconds) = 1.53309e+06
+
+Testing DPStrategy2Machines: {"jobs":[250,207,67,239,41,252,288,277,247,177,273,183],"learningFactor":-0.05666,"numOfWorkers":2}
+CMAX = 1162.04
+BEST BUNCH = {[41, 183, 247, 250, 252, 277], [67, 177, 207, 239, 273, 288]}
+DURATION (milliseconds) = 14.4013
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[98,274,72,1,263,284,150,207,22,20,203,148],"learningFactor":-0.24498,"numOfWorkers":2}
+CMAX = 609.056
+BEST BUNCH = {[1, 20, 98, 207, 274, 284], [22, 72, 148, 150, 203, 263]}
+DURATION (milliseconds) = 1.54333e+06
+
+Testing DPStrategy2Machines: {"jobs":[98,274,72,1,263,284,150,207,22,20,203,148],"learningFactor":-0.24498,"numOfWorkers":2}
+CMAX = 609.056
+BEST BUNCH = {[1, 20, 98, 207, 274, 284], [22, 72, 148, 150, 203, 263]}
+DURATION (milliseconds) = 23.0316
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[60,268,112,18,249,281,115,195,183,127,123,150],"learningFactor":-0.94074,"numOfWorkers":2}
+CMAX = 288.917
+BEST BUNCH = {[18, 115, 150, 195, 249, 268], [60, 112, 123, 127, 183, 281]}
+DURATION (milliseconds) = 1.54189e+06
+
+Testing DPStrategy2Machines: {"jobs":[60,268,112,18,249,281,115,195,183,127,123,150],"learningFactor":-0.94074,"numOfWorkers":2}
+CMAX = 288.917
+BEST BUNCH = {[18, 115, 150, 195, 249, 268], [60, 112, 123, 127, 183, 281]}
+DURATION (milliseconds) = 14.6494
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[71,69,173,289,66,156,243,288,168,197,230,161],"learningFactor":-0.10037,"numOfWorkers":2}
+CMAX = 924.55
+BEST BUNCH = {[66, 71, 161, 230, 243, 288], [69, 156, 168, 173, 197, 289]}
+DURATION (milliseconds) = 1.54135e+06
+
+Testing DPStrategy2Machines: {"jobs":[71,69,173,289,66,156,243,288,168,197,230,161],"learningFactor":-0.10037,"numOfWorkers":2}
+CMAX = 924.55
+BEST BUNCH = {[66, 71, 161, 230, 243, 288], [69, 156, 168, 173, 197, 289]}
+DURATION (milliseconds) = 14.6574
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[126,56,227,89,231,244,206,250,112,198,153,134],"learningFactor":-0.46815,"numOfWorkers":2}
+CMAX = 564.949
+BEST BUNCH = {[56, 126, 153, 198, 244, 250], [89, 112, 134, 206, 227, 231]}
+DURATION (milliseconds) = 1.54343e+06
+
+Testing DPStrategy2Machines: {"jobs":[126,56,227,89,231,244,206,250,112,198,153,134],"learningFactor":-0.46815,"numOfWorkers":2}
+CMAX = 564.949
+BEST BUNCH = {[56, 126, 153, 198, 244, 250], [89, 112, 134, 206, 227, 231]}
+DURATION (milliseconds) = 14.4503
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[237,119,185,12,114,86,222,181,263,118,42,293],"learningFactor":-0.33249,"numOfWorkers":2}
+CMAX = 592.426
+BEST BUNCH = {[12, 86, 118, 181, 263, 293], [42, 114, 119, 185, 222, 237]}
+DURATION (milliseconds) = 1.54639e+06
+
+Testing DPStrategy2Machines: {"jobs":[237,119,185,12,114,86,222,181,263,118,42,293],"learningFactor":-0.33249,"numOfWorkers":2}
+CMAX = 592.426
+BEST BUNCH = {[12, 86, 118, 181, 263, 293], [42, 114, 119, 185, 222, 237]}
+DURATION (milliseconds) = 15.0031
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[72,212,11,27,232,187,210,36,85,290,202,186],"learningFactor":-0.31817,"numOfWorkers":2}
+CMAX = 557.996
+BEST BUNCH = {[11, 36, 186, 202, 210, 232], [27, 72, 85, 187, 212, 290]}
+DURATION (milliseconds) = 1.54396e+06
+
+Testing DPStrategy2Machines: {"jobs":[72,212,11,27,232,187,210,36,85,290,202,186],"learningFactor":-0.31817,"numOfWorkers":2}
+CMAX = 557.995
+BEST BUNCH = {[11, 36, 186, 202, 210, 232], [27, 72, 85, 187, 212, 290]}
+DURATION (milliseconds) = 14.1281
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[28,30,275,216,126,115,77,243,250,143,121,279],"learningFactor":-0.80492,"numOfWorkers":2}
+CMAX = 327.049
+BEST BUNCH = {[28, 77, 126, 216, 243, 275], [30, 115, 121, 143, 250, 279]}
+DURATION (milliseconds) = 1.5455e+06
+
+Testing DPStrategy2Machines: {"jobs":[28,30,275,216,126,115,77,243,250,143,121,279],"learningFactor":-0.80492,"numOfWorkers":2}
+CMAX = 327.049
+BEST BUNCH = {[28, 77, 126, 216, 243, 275], [30, 115, 121, 143, 250, 279]}
+DURATION (milliseconds) = 14.7121
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[25,49,134,62,284,7,182,67,142,86,162,277],"learningFactor":-0.49233,"numOfWorkers":2}
+CMAX = 363.798
+BEST BUNCH = {[7, 49, 86, 142, 182, 284], [25, 62, 67, 134, 162, 277]}
+DURATION (milliseconds) = 1.55852e+06
+
+Testing DPStrategy2Machines: {"jobs":[25,49,134,62,284,7,182,67,142,86,162,277],"learningFactor":-0.49233,"numOfWorkers":2}
+CMAX = 363.798
+BEST BUNCH = {[7, 49, 86, 142, 182, 284], [25, 62, 67, 134, 162, 277]}
+DURATION (milliseconds) = 14.4875
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[103,297,96,131,198,92,292,203,108,136,14,12],"learningFactor":-0.74719,"numOfWorkers":2}
+CMAX = 300.327
+BEST BUNCH = {[12, 96, 103, 136, 203, 292], [14, 92, 108, 131, 198, 297]}
+DURATION (milliseconds) = 1.57102e+06
+
+Testing DPStrategy2Machines: {"jobs":[103,297,96,131,198,92,292,203,108,136,14,12],"learningFactor":-0.74719,"numOfWorkers":2}
+CMAX = 300.327
+BEST BUNCH = {[12, 96, 103, 136, 203, 292], [14, 92, 108, 131, 198, 297]}
+DURATION (milliseconds) = 14.1902
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[87,54,197,223,127,170,135,103,207,296,298,180],"learningFactor":-0.26219,"numOfWorkers":2}
+CMAX = 739.707
+BEST BUNCH = {[54, 127, 135, 207, 223, 298], [87, 103, 170, 180, 197, 296]}
+DURATION (milliseconds) = 1.54821e+06
+
+Testing DPStrategy2Machines: {"jobs":[87,54,197,223,127,170,135,103,207,296,298,180],"learningFactor":-0.26219,"numOfWorkers":2}
+CMAX = 739.707
+BEST BUNCH = {[54, 127, 135, 207, 223, 298], [87, 103, 170, 180, 197, 296]}
+DURATION (milliseconds) = 14.1915
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[201,228,118,11,180,98,124,69,244,26,177,286],"learningFactor":-0.36103,"numOfWorkers":2}
+CMAX = 532.62
+BEST BUNCH = {[11, 98, 118, 180, 228, 244], [26, 69, 124, 177, 201, 286]}
+DURATION (milliseconds) = 1.54968e+06
+
+Testing DPStrategy2Machines: {"jobs":[201,228,118,11,180,98,124,69,244,26,177,286],"learningFactor":-0.36103,"numOfWorkers":2}
+CMAX = 532.62
+BEST BUNCH = {[11, 98, 118, 180, 228, 244], [26, 69, 124, 177, 201, 286]}
+DURATION (milliseconds) = 15.2436
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[46,224,297,220,196,275,145,77,201,213,120,197],"learningFactor":-0.74937,"numOfWorkers":2}
+CMAX = 441.206
+BEST BUNCH = {[46, 145, 197, 220, 224, 297], [77, 120, 196, 201, 213, 275]}
+DURATION (milliseconds) = 1.55068e+06
+
+Testing DPStrategy2Machines: {"jobs":[46,224,297,220,196,275,145,77,201,213,120,197],"learningFactor":-0.74937,"numOfWorkers":2}
+CMAX = 441.206
+BEST BUNCH = {[46, 145, 197, 220, 224, 297], [77, 120, 196, 201, 213, 275]}
+DURATION (milliseconds) = 14.9135
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[299,165,135,149,198,107,231,183,1,44,151,61],"learningFactor":-0.50903,"numOfWorkers":2}
+CMAX = 431.789
+BEST BUNCH = {[1, 107, 149, 183, 198, 231], [44, 61, 135, 151, 165, 299]}
+DURATION (milliseconds) = 1.54237e+06
+
+Testing DPStrategy2Machines: {"jobs":[299,165,135,149,198,107,231,183,1,44,151,61],"learningFactor":-0.50903,"numOfWorkers":2}
+CMAX = 431.789
+BEST BUNCH = {[1, 107, 149, 183, 198, 231], [44, 61, 135, 151, 165, 299]}
+DURATION (milliseconds) = 14.6248
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[5,267,202,179,131,113,56,11,221,121,186,273],"learningFactor":-0.65783,"numOfWorkers":2}
+CMAX = 353.764
+BEST BUNCH = {[5, 113, 131, 186, 202, 221], [11, 56, 121, 179, 267, 273]}
+DURATION (milliseconds) = 1.54965e+06
+
+Testing DPStrategy2Machines: {"jobs":[5,267,202,179,131,113,56,11,221,121,186,273],"learningFactor":-0.65783,"numOfWorkers":2}
+CMAX = 353.764
+BEST BUNCH = {[5, 113, 131, 186, 202, 221], [11, 56, 121, 179, 267, 273]}
+DURATION (milliseconds) = 14.0926
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[151,221,34,208,96,53,298,285,11,59,44,35],"learningFactor":-0.28646,"numOfWorkers":2}
+CMAX = 488.634
+BEST BUNCH = {[11, 34, 53, 151, 208, 298], [35, 44, 59, 96, 221, 285]}
+DURATION (milliseconds) = 1.54571e+06
+
+Testing DPStrategy2Machines: {"jobs":[151,221,34,208,96,53,298,285,11,59,44,35],"learningFactor":-0.28646,"numOfWorkers":2}
+CMAX = 488.634
+BEST BUNCH = {[11, 34, 53, 151, 208, 298], [35, 44, 59, 96, 221, 285]}
+DURATION (milliseconds) = 15.2196
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[16,273,185,92,191,97,29,2,17,90,160,133],"learningFactor":-0.47996,"numOfWorkers":2}
+CMAX = 316.384
+BEST BUNCH = {[2, 29, 92, 97, 160, 273], [16, 17, 90, 133, 185, 191]}
+DURATION (milliseconds) = 1.54299e+06
+
+Testing DPStrategy2Machines: {"jobs":[16,273,185,92,191,97,29,2,17,90,160,133],"learningFactor":-0.47996,"numOfWorkers":2}
+CMAX = 316.384
+BEST BUNCH = {[2, 29, 92, 97, 160, 273], [16, 17, 90, 133, 185, 191]}
+DURATION (milliseconds) = 14.6285
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[154,193,8,30,267,22,2,71,94,114,158,268],"learningFactor":-0.53572,"numOfWorkers":2}
+CMAX = 310.345
+BEST BUNCH = {[2, 22, 94, 114, 193, 268], [8, 30, 71, 154, 158, 267]}
+DURATION (milliseconds) = 1.54289e+06
+
+Testing DPStrategy2Machines: {"jobs":[154,193,8,30,267,22,2,71,94,114,158,268],"learningFactor":-0.53572,"numOfWorkers":2}
+CMAX = 310.345
+BEST BUNCH = {[2, 22, 94, 114, 193, 268], [8, 30, 71, 154, 158, 267]}
+DURATION (milliseconds) = 14.0366
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[237,70,153,148,13,20,114,230,190,201,100,46],"learningFactor":-0.61052,"numOfWorkers":2}
+CMAX = 325.74
+BEST BUNCH = {[13, 70, 100, 148, 201, 230], [20, 46, 114, 153, 190, 237]}
+DURATION (milliseconds) = 1.54506e+06
+
+Testing DPStrategy2Machines: {"jobs":[237,70,153,148,13,20,114,230,190,201,100,46],"learningFactor":-0.61052,"numOfWorkers":2}
+CMAX = 325.74
+BEST BUNCH = {[13, 70, 100, 148, 201, 230], [20, 46, 114, 153, 190, 237]}
+DURATION (milliseconds) = 15.3258
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[19,132,208,8,75,59,191,3,244,296,170,254],"learningFactor":-0.90539,"numOfWorkers":2}
+CMAX = 223.294
+BEST BUNCH = {[3, 19, 132, 191, 208, 296], [8, 59, 75, 170, 244, 254]}
+DURATION (milliseconds) = 1.54351e+06
+
+Testing DPStrategy2Machines: {"jobs":[19,132,208,8,75,59,191,3,244,296,170,254],"learningFactor":-0.90539,"numOfWorkers":2}
+CMAX = 223.294
+BEST BUNCH = {[3, 19, 132, 191, 208, 296], [8, 59, 75, 170, 244, 254]}
+DURATION (milliseconds) = 14.0254
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[176,248,74,294,249,209,288,212,192,250,58,182],"learningFactor":-0.71428,"numOfWorkers":2}
+CMAX = 512.043
+BEST BUNCH = {[58, 176, 209, 248, 250, 288], [74, 182, 192, 212, 249, 294]}
+DURATION (milliseconds) = 1.54016e+06
+
+Testing DPStrategy2Machines: {"jobs":[176,248,74,294,249,209,288,212,192,250,58,182],"learningFactor":-0.71428,"numOfWorkers":2}
+CMAX = 512.043
+BEST BUNCH = {[58, 176, 209, 248, 250, 288], [74, 182, 192, 212, 249, 294]}
+DURATION (milliseconds) = 14.4839
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[42,283,58,270,193,169,52,234,167,118,84,41],"learningFactor":-0.19868,"numOfWorkers":2}
+CMAX = 647.382
+BEST BUNCH = {[41, 58, 84, 169, 234, 270], [42, 52, 118, 167, 193, 283]}
+DURATION (milliseconds) = 1.53846e+06
+
+Testing DPStrategy2Machines: {"jobs":[42,283,58,270,193,169,52,234,167,118,84,41],"learningFactor":-0.19868,"numOfWorkers":2}
+CMAX = 647.382
+BEST BUNCH = {[41, 58, 84, 169, 234, 270], [42, 52, 118, 167, 193, 283]}
+DURATION (milliseconds) = 14.0651
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[249,123,217,252,111,237,62,14,26,16,253,220],"learningFactor":-0.29737,"numOfWorkers":2}
+CMAX = 579.335
+BEST BUNCH = {[14, 62, 123, 217, 220, 249], [16, 26, 111, 237, 252, 253]}
+DURATION (milliseconds) = 1.54724e+06
+
+Testing DPStrategy2Machines: {"jobs":[249,123,217,252,111,237,62,14,26,16,253,220],"learningFactor":-0.29737,"numOfWorkers":2}
+CMAX = 579.335
+BEST BUNCH = {[14, 62, 123, 217, 220, 249], [16, 26, 111, 237, 252, 253]}
+DURATION (milliseconds) = 14.1083
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[207,231,113,212,195,23,3,125,94,224,235,296],"learningFactor":-0.15428,"numOfWorkers":2}
+CMAX = 789.164
+BEST BUNCH = {[3, 113, 125, 212, 235, 296], [23, 94, 195, 207, 224, 231]}
+DURATION (milliseconds) = 1.56326e+06
+
+Testing DPStrategy2Machines: {"jobs":[207,231,113,212,195,23,3,125,94,224,235,296],"learningFactor":-0.15428,"numOfWorkers":2}
+CMAX = 789.164
+BEST BUNCH = {[3, 113, 125, 212, 235, 296], [23, 94, 195, 207, 224, 231]}
+DURATION (milliseconds) = 14.974
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[111,209,281,160,157,282,188,100,297,175,155,99],"learningFactor":-0.37919,"numOfWorkers":2}
+CMAX = 693.723
+BEST BUNCH = {[99, 111, 155, 175, 282, 297], [100, 157, 160, 188, 209, 281]}
+DURATION (milliseconds) = 1.5537e+06
+
+Testing DPStrategy2Machines: {"jobs":[111,209,281,160,157,282,188,100,297,175,155,99],"learningFactor":-0.37919,"numOfWorkers":2}
+CMAX = 693.723
+BEST BUNCH = {[99, 111, 155, 175, 282, 297], [100, 157, 160, 188, 209, 281]}
+DURATION (milliseconds) = 14.3118
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[62,195,129,293,225,109,261,216,70,279,47,153],"learningFactor":-0.89312,"numOfWorkers":2}
+CMAX = 331.595
+BEST BUNCH = {[47, 109, 153, 195, 216, 293], [62, 70, 129, 225, 261, 279]}
+DURATION (milliseconds) = 1.55903e+06
+
+Testing DPStrategy2Machines: {"jobs":[62,195,129,293,225,109,261,216,70,279,47,153],"learningFactor":-0.89312,"numOfWorkers":2}
+CMAX = 331.595
+BEST BUNCH = {[47, 109, 153, 195, 216, 293], [62, 70, 129, 225, 261, 279]}
+DURATION (milliseconds) = 14.1022
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[291,284,295,155,92,172,137,90,175,118,119,28],"learningFactor":-0.31967,"numOfWorkers":2}
+CMAX = 640.854
+BEST BUNCH = {[28, 90, 137, 172, 284, 291], [92, 118, 119, 155, 175, 295]}
+DURATION (milliseconds) = 1.56852e+06
+
+Testing DPStrategy2Machines: {"jobs":[291,284,295,155,92,172,137,90,175,118,119,28],"learningFactor":-0.31967,"numOfWorkers":2}
+CMAX = 640.854
+BEST BUNCH = {[28, 90, 137, 172, 284, 291], [92, 118, 119, 155, 175, 295]}
+DURATION (milliseconds) = 17.5633
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[277,98,94,299,288,128,28,190,184,169,124,71],"learningFactor":-0.01215,"numOfWorkers":2}
+CMAX = 959.068
+BEST BUNCH = {[28, 71, 128, 184, 277, 288], [94, 98, 124, 169, 190, 299]}
+DURATION (milliseconds) = 1.55535e+06
+
+Testing DPStrategy2Machines: {"jobs":[277,98,94,299,288,128,28,190,184,169,124,71],"learningFactor":-0.01215,"numOfWorkers":2}
+CMAX = 959.068
+BEST BUNCH = {[28, 71, 128, 184, 277, 288], [94, 98, 124, 169, 190, 299]}
+DURATION (milliseconds) = 15.9664
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[270,39,266,214,260,219,103,112,6,10,46,193],"learningFactor":-0.07143,"numOfWorkers":2}
+CMAX = 782.216
+BEST BUNCH = {[6, 10, 112, 214, 260, 270], [39, 46, 103, 193, 219, 266]}
+DURATION (milliseconds) = 1.55493e+06
+
+Testing DPStrategy2Machines: {"jobs":[270,39,266,214,260,219,103,112,6,10,46,193],"learningFactor":-0.07143,"numOfWorkers":2}
+CMAX = 782.216
+BEST BUNCH = {[6, 10, 112, 214, 260, 270], [39, 46, 103, 193, 219, 266]}
+DURATION (milliseconds) = 15.4193
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[53,276,100,62,64,213,36,201,204,244,113,254],"learningFactor":-0.55835,"numOfWorkers":2}
+CMAX = 429.103
+BEST BUNCH = {[36, 64, 100, 204, 244, 276], [53, 62, 113, 201, 213, 254]}
+DURATION (milliseconds) = 1.54229e+06
+
+Testing DPStrategy2Machines: {"jobs":[53,276,100,62,64,213,36,201,204,244,113,254],"learningFactor":-0.55835,"numOfWorkers":2}
+CMAX = 429.103
+BEST BUNCH = {[36, 64, 100, 204, 244, 276], [53, 62, 113, 201, 213, 254]}
+DURATION (milliseconds) = 14.5581
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[93,184,202,258,237,270,157,256,96,54,85,196],"learningFactor":-0.72563,"numOfWorkers":2}
+CMAX = 425.625
+BEST BUNCH = {[54, 93, 196, 202, 256, 270], [85, 96, 157, 184, 237, 258]}
+DURATION (milliseconds) = 1.54277e+06
+
+Testing DPStrategy2Machines: {"jobs":[93,184,202,258,237,270,157,256,96,54,85,196],"learningFactor":-0.72563,"numOfWorkers":2}
+CMAX = 425.625
+BEST BUNCH = {[54, 93, 196, 202, 256, 270], [85, 96, 157, 184, 237, 258]}
+DURATION (milliseconds) = 14.4405
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[178,192,147,110,221,25,159,285,149,10,230,26],"learningFactor":-0.99684,"numOfWorkers":2}
+CMAX = 228.548
+BEST BUNCH = {[10, 110, 147, 159, 178, 230], [25, 26, 149, 192, 221, 285]}
+DURATION (milliseconds) = 1.57783e+06
+
+Testing DPStrategy2Machines: {"jobs":[178,192,147,110,221,25,159,285,149,10,230,26],"learningFactor":-0.99684,"numOfWorkers":2}
+CMAX = 228.548
+BEST BUNCH = {[10, 110, 147, 159, 178, 230], [25, 26, 149, 192, 221, 285]}
+DURATION (milliseconds) = 15.1336
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[236,179,49,63,118,189,209,184,47,255,21,212],"learningFactor":-0.97611,"numOfWorkers":2}
+CMAX = 248.236
+BEST BUNCH = {[21, 63, 179, 189, 212, 236], [47, 49, 118, 184, 209, 255]}
+DURATION (milliseconds) = 1.54819e+06
+
+Testing DPStrategy2Machines: {"jobs":[236,179,49,63,118,189,209,184,47,255,21,212],"learningFactor":-0.97611,"numOfWorkers":2}
+CMAX = 248.236
+BEST BUNCH = {[21, 63, 179, 189, 212, 236], [47, 49, 118, 184, 209, 255]}
+DURATION (milliseconds) = 15.7905
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[245,192,47,127,219,30,8,205,120,156,230,44],"learningFactor":-0.83787,"numOfWorkers":2}
+CMAX = 256.436
+BEST BUNCH = {[8, 47, 127, 192, 219, 245], [30, 44, 120, 156, 205, 230]}
+DURATION (milliseconds) = 1.54119e+06
+
+Testing DPStrategy2Machines: {"jobs":[245,192,47,127,219,30,8,205,120,156,230,44],"learningFactor":-0.83787,"numOfWorkers":2}
+CMAX = 256.436
+BEST BUNCH = {[8, 47, 127, 192, 219, 245], [30, 44, 120, 156, 205, 230]}
+DURATION (milliseconds) = 16.23
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[53,277,22,128,186,28,82,51,113,219,226,87],"learningFactor":-0.08798,"numOfWorkers":2}
+CMAX = 648.239
+BEST BUNCH = {[22, 51, 82, 87, 219, 277], [28, 53, 113, 128, 186, 226]}
+DURATION (milliseconds) = 1.51982e+06
+
+Testing DPStrategy2Machines: {"jobs":[53,277,22,128,186,28,82,51,113,219,226,87],"learningFactor":-0.08798,"numOfWorkers":2}
+CMAX = 648.239
+BEST BUNCH = {[22, 51, 82, 87, 219, 277], [28, 53, 113, 128, 186, 226]}
+DURATION (milliseconds) = 14.0642
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[185,69,279,98,172,276,235,166,138,153,58,184],"learningFactor":-0.85045,"numOfWorkers":2}
+CMAX = 360.289
+BEST BUNCH = {[58, 138, 166, 172, 184, 279], [69, 98, 153, 185, 235, 276]}
+DURATION (milliseconds) = 1.5204e+06
+
+Testing DPStrategy2Machines: {"jobs":[185,69,279,98,172,276,235,166,138,153,58,184],"learningFactor":-0.85045,"numOfWorkers":2}
+CMAX = 360.289
+BEST BUNCH = {[58, 138, 166, 172, 184, 279], [69, 98, 153, 185, 235, 276]}
+DURATION (milliseconds) = 14.0613
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[207,18,266,114,124,286,100,29,82,81,252,102],"learningFactor":-0.47308,"numOfWorkers":2}
+CMAX = 430.138
+BEST BUNCH = {[18, 82, 100, 102, 252, 286], [29, 81, 114, 124, 207, 266]}
+DURATION (milliseconds) = 1.52955e+06
+
+Testing DPStrategy2Machines: {"jobs":[207,18,266,114,124,286,100,29,82,81,252,102],"learningFactor":-0.47308,"numOfWorkers":2}
+CMAX = 430.138
+BEST BUNCH = {[18, 82, 100, 102, 252, 286], [29, 81, 114, 124, 207, 266]}
+DURATION (milliseconds) = 14.4445
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[115,110,17,22,285,166,79,85,19,98,186,273],"learningFactor":-0.37108,"numOfWorkers":2}
+CMAX = 426.881
+BEST BUNCH = {[17, 79, 85, 98, 166, 273], [19, 22, 110, 115, 186, 285]}
+DURATION (milliseconds) = 1.53577e+06
+
+Testing DPStrategy2Machines: {"jobs":[115,110,17,22,285,166,79,85,19,98,186,273],"learningFactor":-0.37108,"numOfWorkers":2}
+CMAX = 426.881
+BEST BUNCH = {[17, 79, 85, 98, 166, 273], [19, 22, 110, 115, 186, 285]}
+DURATION (milliseconds) = 15.2847
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[239,36,176,92,110,217,65,70,7,31,26,276],"learningFactor":-0.45196,"numOfWorkers":2}
+CMAX = 345.898
+BEST BUNCH = {[7, 36, 70, 110, 217, 239], [26, 31, 65, 92, 176, 276]}
+DURATION (milliseconds) = 1.52079e+06
+
+Testing DPStrategy2Machines: {"jobs":[239,36,176,92,110,217,65,70,7,31,26,276],"learningFactor":-0.45196,"numOfWorkers":2}
+CMAX = 345.898
+BEST BUNCH = {[7, 36, 70, 110, 217, 239], [26, 31, 65, 92, 176, 276]}
+DURATION (milliseconds) = 14.2471
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[44,283,180,41,140,152,168,202,92,246,231,244],"learningFactor":-0.27739,"numOfWorkers":2}
+CMAX = 699.17
+BEST BUNCH = {[41, 140, 168, 180, 231, 244], [44, 92, 152, 202, 246, 283]}
+DURATION (milliseconds) = 1.56141e+06
+
+Testing DPStrategy2Machines: {"jobs":[44,283,180,41,140,152,168,202,92,246,231,244],"learningFactor":-0.27739,"numOfWorkers":2}
+CMAX = 699.17
+BEST BUNCH = {[41, 140, 168, 180, 231, 244], [44, 92, 152, 202, 246, 283]}
+DURATION (milliseconds) = 14.4482
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[252,225,239,101,117,263,161,128,151,1,264,90],"learningFactor":-0.007,"numOfWorkers":2}
+CMAX = 986.823
+BEST BUNCH = {[1, 128, 151, 225, 239, 252], [90, 101, 117, 161, 263, 264]}
+DURATION (milliseconds) = 1.53341e+06
+
+Testing DPStrategy2Machines: {"jobs":[252,225,239,101,117,263,161,128,151,1,264,90],"learningFactor":-0.007,"numOfWorkers":2}
+CMAX = 986.823
+BEST BUNCH = {[1, 128, 151, 225, 239, 252], [90, 101, 117, 161, 263, 264]}
+DURATION (milliseconds) = 13.9544
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[168,219,19,154,228,80,147,144,126,58,297,267],"learningFactor":-0.20003,"numOfWorkers":2}
+CMAX = 726.198
+BEST BUNCH = {[19, 126, 147, 168, 228, 267], [58, 80, 144, 154, 219, 297]}
+DURATION (milliseconds) = 1.52366e+06
+
+Testing DPStrategy2Machines: {"jobs":[168,219,19,154,228,80,147,144,126,58,297,267],"learningFactor":-0.20003,"numOfWorkers":2}
+CMAX = 726.198
+BEST BUNCH = {[19, 126, 147, 168, 228, 267], [58, 80, 144, 154, 219, 297]}
+DURATION (milliseconds) = 15.1787
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[164,199,114,46,176,44,246,107,95,80,20,272],"learningFactor":-0.69756,"numOfWorkers":2}
+CMAX = 306.392
+BEST BUNCH = {[20, 46, 114, 164, 199, 272], [44, 80, 95, 107, 176, 246]}
+DURATION (milliseconds) = 1.52369e+06
+
+Testing DPStrategy2Machines: {"jobs":[164,199,114,46,176,44,246,107,95,80,20,272],"learningFactor":-0.69756,"numOfWorkers":2}
+CMAX = 306.392
+BEST BUNCH = {[20, 46, 114, 164, 199, 272], [44, 80, 95, 107, 176, 246]}
+DURATION (milliseconds) = 14.0213
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[296,160,254,98,7,297,182,83,201,130,162,153],"learningFactor":-0.76018,"numOfWorkers":2}
+CMAX = 385.348
+BEST BUNCH = {[7, 130, 153, 201, 296, 297], [83, 98, 160, 162, 182, 254]}
+DURATION (milliseconds) = 1.57319e+06
+
+Testing DPStrategy2Machines: {"jobs":[296,160,254,98,7,297,182,83,201,130,162,153],"learningFactor":-0.76018,"numOfWorkers":2}
+CMAX = 385.348
+BEST BUNCH = {[7, 130, 153, 201, 296, 297], [83, 98, 160, 162, 182, 254]}
+DURATION (milliseconds) = 14.3992
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[44,88,116,30,299,41,214,216,142,13,231,252],"learningFactor":-0.03563,"numOfWorkers":2}
+CMAX = 800.468
+BEST BUNCH = {[13, 88, 116, 142, 231, 252], [30, 41, 44, 214, 216, 299]}
+DURATION (milliseconds) = 1.55647e+06
+
+Testing DPStrategy2Machines: {"jobs":[44,88,116,30,299,41,214,216,142,13,231,252],"learningFactor":-0.03563,"numOfWorkers":2}
+CMAX = 800.468
+BEST BUNCH = {[13, 88, 116, 142, 231, 252], [30, 41, 44, 214, 216, 299]}
+DURATION (milliseconds) = 14.3457
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[278,94,287,76,53,87,108,33,290,79,143,75],"learningFactor":-0.49414,"numOfWorkers":2}
+CMAX = 413.202
+BEST BUNCH = {[33, 53, 79, 94, 287, 290], [75, 76, 87, 108, 143, 278]}
+DURATION (milliseconds) = 1.52525e+06
+
+Testing DPStrategy2Machines: {"jobs":[278,94,287,76,53,87,108,33,290,79,143,75],"learningFactor":-0.49414,"numOfWorkers":2}
+CMAX = 413.202
+BEST BUNCH = {[33, 53, 79, 94, 287, 290], [75, 76, 87, 108, 143, 278]}
+DURATION (milliseconds) = 13.9149
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[293,229,127,161,133,73,252,75,181,278,299,20],"learningFactor":-0.52698,"numOfWorkers":2}
+CMAX = 526.681
+BEST BUNCH = {[20, 127, 133, 229, 278, 293], [73, 75, 161, 181, 252, 299]}
+DURATION (milliseconds) = 1.51865e+06
+
+Testing DPStrategy2Machines: {"jobs":[293,229,127,161,133,73,252,75,181,278,299,20],"learningFactor":-0.52698,"numOfWorkers":2}
+CMAX = 526.681
+BEST BUNCH = {[20, 127, 133, 229, 278, 293], [73, 75, 161, 181, 252, 299]}
+DURATION (milliseconds) = 14.2903
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[132,232,125,4,264,83,208,157,50,53,216,18],"learningFactor":-0.74985,"numOfWorkers":2}
+CMAX = 266.602
+BEST BUNCH = {[4, 50, 125, 132, 208, 264], [18, 53, 83, 157, 216, 232]}
+DURATION (milliseconds) = 1.52536e+06
+
+Testing DPStrategy2Machines: {"jobs":[132,232,125,4,264,83,208,157,50,53,216,18],"learningFactor":-0.74985,"numOfWorkers":2}
+CMAX = 266.602
+BEST BUNCH = {[4, 50, 125, 132, 208, 264], [18, 53, 83, 157, 216, 232]}
+DURATION (milliseconds) = 14.7504
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[59,21,11,22,147,114,86,255,230,70,214,292],"learningFactor":-0.98846,"numOfWorkers":2}
+CMAX = 188.701
+BEST BUNCH = {[11, 59, 70, 147, 214, 255], [21, 22, 86, 114, 230, 292]}
+DURATION (milliseconds) = 1.52889e+06
+
+Testing DPStrategy2Machines: {"jobs":[59,21,11,22,147,114,86,255,230,70,214,292],"learningFactor":-0.98846,"numOfWorkers":2}
+CMAX = 188.701
+BEST BUNCH = {[11, 59, 70, 147, 214, 255], [21, 22, 86, 114, 230, 292]}
+DURATION (milliseconds) = 14.132
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[293,125,230,90,43,254,23,170,283,72,2,63],"learningFactor":-0.88789,"numOfWorkers":2}
+CMAX = 231.467
+BEST BUNCH = {[2, 63, 72, 170, 254, 283], [23, 43, 90, 125, 230, 293]}
+DURATION (milliseconds) = 1.52138e+06
+
+Testing DPStrategy2Machines: {"jobs":[293,125,230,90,43,254,23,170,283,72,2,63],"learningFactor":-0.88789,"numOfWorkers":2}
+CMAX = 231.467
+BEST BUNCH = {[2, 63, 72, 170, 254, 283], [23, 43, 90, 125, 230, 293]}
+DURATION (milliseconds) = 14.0895
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[221,181,9,141,92,126,67,136,33,91,123,217],"learningFactor":-0.05622,"numOfWorkers":2}
+CMAX = 664.706
+BEST BUNCH = {[9, 92, 123, 136, 141, 217], [33, 67, 91, 126, 181, 221]}
+DURATION (milliseconds) = 1.52653e+06
+
+Testing DPStrategy2Machines: {"jobs":[221,181,9,141,92,126,67,136,33,91,123,217],"learningFactor":-0.05622,"numOfWorkers":2}
+CMAX = 664.706
+BEST BUNCH = {[9, 92, 123, 136, 141, 217], [33, 67, 91, 126, 181, 221]}
+DURATION (milliseconds) = 14.8537
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[41,189,198,178,16,79,278,104,3,42,144,295],"learningFactor":-0.25394,"numOfWorkers":2}
+CMAX = 537.299
+BEST BUNCH = {[3, 42, 104, 144, 198, 295], [16, 41, 79, 178, 189, 278]}
+DURATION (milliseconds) = 1.52919e+06
+
+Testing DPStrategy2Machines: {"jobs":[41,189,198,178,16,79,278,104,3,42,144,295],"learningFactor":-0.25394,"numOfWorkers":2}
+CMAX = 537.3
+BEST BUNCH = {[3, 42, 104, 144, 198, 295], [16, 41, 79, 178, 189, 278]}
+DURATION (milliseconds) = 17.2512
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[225,69,235,299,90,10,76,155,173,52,54,183],"learningFactor":-0.8075599999999999,"numOfWorkers":2}
+CMAX = 272.921
+BEST BUNCH = {[10, 76, 90, 155, 225, 299], [52, 54, 69, 173, 183, 235]}
+DURATION (milliseconds) = 1.52797e+06
+
+Testing DPStrategy2Machines: {"jobs":[225,69,235,299,90,10,76,155,173,52,54,183],"learningFactor":-0.8075599999999999,"numOfWorkers":2}
+CMAX = 272.921
+BEST BUNCH = {[10, 76, 90, 155, 225, 299], [52, 54, 69, 173, 183, 235]}
+DURATION (milliseconds) = 13.9821
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[166,295,233,290,57,128,54,253,151,63,157,251],"learningFactor":-0.26635,"numOfWorkers":2}
+CMAX = 734.155
+BEST BUNCH = {[54, 128, 151, 166, 253, 290], [57, 63, 157, 233, 251, 295]}
+DURATION (milliseconds) = 1.52577e+06
+
+Testing DPStrategy2Machines: {"jobs":[166,295,233,290,57,128,54,253,151,63,157,251],"learningFactor":-0.26635,"numOfWorkers":2}
+CMAX = 734.155
+BEST BUNCH = {[54, 128, 151, 166, 253, 290], [57, 63, 157, 233, 251, 295]}
+DURATION (milliseconds) = 14.7876
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[81,13,281,80,215,96,151,85,91,148,6,175],"learningFactor":-0.70718,"numOfWorkers":2}
+CMAX = 267.363
+BEST BUNCH = {[6, 80, 85, 151, 175, 215], [13, 81, 91, 96, 148, 281]}
+DURATION (milliseconds) = 1.55718e+06
+
+Testing DPStrategy2Machines: {"jobs":[81,13,281,80,215,96,151,85,91,148,6,175],"learningFactor":-0.70718,"numOfWorkers":2}
+CMAX = 267.363
+BEST BUNCH = {[6, 80, 85, 151, 175, 215], [13, 81, 91, 96, 148, 281]}
+DURATION (milliseconds) = 15.9972
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[218,98,95,39,239,42,175,160,279,80,204,229],"learningFactor":-0.30467,"numOfWorkers":2}
+CMAX = 614.896
+BEST BUNCH = {[39, 95, 98, 204, 218, 279], [42, 80, 160, 175, 229, 239]}
+DURATION (milliseconds) = 1.5236e+06
+
+Testing DPStrategy2Machines: {"jobs":[218,98,95,39,239,42,175,160,279,80,204,229],"learningFactor":-0.30467,"numOfWorkers":2}
+CMAX = 614.896
+BEST BUNCH = {[39, 95, 98, 204, 218, 279], [42, 80, 160, 175, 229, 239]}
+DURATION (milliseconds) = 14.4588
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[53,55,258,143,261,251,131,293,211,130,92,8],"learningFactor":-0.75534,"numOfWorkers":2}
+CMAX = 340.774
+BEST BUNCH = {[8, 92, 143, 211, 251, 261], [53, 55, 130, 131, 258, 293]}
+DURATION (milliseconds) = 1.53692e+06
+
+Testing DPStrategy2Machines: {"jobs":[53,55,258,143,261,251,131,293,211,130,92,8],"learningFactor":-0.75534,"numOfWorkers":2}
+CMAX = 340.774
+BEST BUNCH = {[8, 92, 143, 211, 251, 261], [53, 55, 130, 131, 258, 293]}
+DURATION (milliseconds) = 13.9774
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[198,57,92,145,117,218,126,262,169,47,37,209],"learningFactor":-0.48011,"numOfWorkers":2}
+CMAX = 444.021
+BEST BUNCH = {[37, 92, 126, 169, 198, 209], [47, 57, 117, 145, 218, 262]}
+DURATION (milliseconds) = 1.53493e+06
+
+Testing DPStrategy2Machines: {"jobs":[198,57,92,145,117,218,126,262,169,47,37,209],"learningFactor":-0.48011,"numOfWorkers":2}
+CMAX = 444.021
+BEST BUNCH = {[37, 92, 126, 169, 198, 209], [47, 57, 117, 145, 218, 262]}
+DURATION (milliseconds) = 14.011
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[247,249,99,242,37,171,244,246,102,188,147,31],"learningFactor":-0.38498,"numOfWorkers":2}
+CMAX = 599.756
+BEST BUNCH = {[31, 99, 147, 242, 244, 246], [37, 102, 171, 188, 247, 249]}
+DURATION (milliseconds) = 1.55e+06
+
+Testing DPStrategy2Machines: {"jobs":[247,249,99,242,37,171,244,246,102,188,147,31],"learningFactor":-0.38498,"numOfWorkers":2}
+CMAX = 599.756
+BEST BUNCH = {[31, 99, 147, 242, 244, 246], [37, 102, 171, 188, 247, 249]}
+DURATION (milliseconds) = 14.2468
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[288,276,240,286,131,244,201,125,23,43,168,143],"learningFactor":-0.02932,"numOfWorkers":2}
+CMAX = 1041.26
+BEST BUNCH = {[23, 125, 131, 244, 276, 286], [43, 143, 168, 201, 240, 288]}
+DURATION (milliseconds) = 1.54271e+06
+
+Testing DPStrategy2Machines: {"jobs":[288,276,240,286,131,244,201,125,23,43,168,143],"learningFactor":-0.02932,"numOfWorkers":2}
+CMAX = 1041.26
+BEST BUNCH = {[23, 125, 131, 244, 276, 286], [43, 143, 168, 201, 240, 288]}
+DURATION (milliseconds) = 15.3148
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[295,284,288,131,201,277,258,197,27,164,127,186],"learningFactor":-0.36517,"numOfWorkers":2}
+CMAX = 766.542
+BEST BUNCH = {[27, 164, 197, 277, 288, 295], [127, 131, 186, 201, 258, 284]}
+DURATION (milliseconds) = 1.56468e+06
+
+Testing DPStrategy2Machines: {"jobs":[295,284,288,131,201,277,258,197,27,164,127,186],"learningFactor":-0.36517,"numOfWorkers":2}
+CMAX = 766.542
+BEST BUNCH = {[27, 164, 197, 277, 288, 295], [127, 131, 186, 201, 258, 284]}
+DURATION (milliseconds) = 15.2882
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[256,225,213,23,116,78,90,226,73,236,41,170],"learningFactor":-0.34445,"numOfWorkers":2}
+CMAX = 543.246
+BEST BUNCH = {[23, 73, 116, 213, 225, 226], [41, 78, 90, 170, 236, 256]}
+DURATION (milliseconds) = 1.59851e+06
+
+Testing DPStrategy2Machines: {"jobs":[256,225,213,23,116,78,90,226,73,236,41,170],"learningFactor":-0.34445,"numOfWorkers":2}
+CMAX = 543.246
+BEST BUNCH = {[23, 73, 116, 213, 225, 226], [41, 78, 90, 170, 236, 256]}
+DURATION (milliseconds) = 14.2879
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[22,127,180,28,177,244,80,186,75,266,268,115],"learningFactor":-0.38749,"numOfWorkers":2}
+CMAX = 519.211
+BEST BUNCH = {[22, 115, 127, 177, 186, 244], [28, 75, 80, 180, 266, 268]}
+DURATION (milliseconds) = 1.57097e+06
+
+Testing DPStrategy2Machines: {"jobs":[22,127,180,28,177,244,80,186,75,266,268,115],"learningFactor":-0.38749,"numOfWorkers":2}
+CMAX = 519.211
+BEST BUNCH = {[22, 115, 127, 177, 186, 244], [28, 75, 80, 180, 266, 268]}
+DURATION (milliseconds) = 14.0379
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[258,177,201,197,169,101,60,39,129,27,123,275],"learningFactor":-0.90292,"numOfWorkers":2}
+CMAX = 272.199
+BEST BUNCH = {[27, 101, 123, 169, 197, 258], [39, 60, 129, 177, 201, 275]}
+DURATION (milliseconds) = 1.56331e+06
+
+Testing DPStrategy2Machines: {"jobs":[258,177,201,197,169,101,60,39,129,27,123,275],"learningFactor":-0.90292,"numOfWorkers":2}
+CMAX = 272.199
+BEST BUNCH = {[27, 101, 123, 169, 197, 258], [39, 60, 129, 177, 201, 275]}
+DURATION (milliseconds) = 14.2685
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[149,277,49,216,232,32,84,181,184,44,289,231],"learningFactor":-0.55745,"numOfWorkers":2}
+CMAX = 463.762
+BEST BUNCH = {[32, 49, 181, 216, 231, 289], [44, 84, 149, 184, 232, 277]}
+DURATION (milliseconds) = 1.55939e+06
+
+Testing DPStrategy2Machines: {"jobs":[149,277,49,216,232,32,84,181,184,44,289,231],"learningFactor":-0.55745,"numOfWorkers":2}
+CMAX = 463.762
+BEST BUNCH = {[32, 49, 181, 216, 231, 289], [44, 84, 149, 184, 232, 277]}
+DURATION (milliseconds) = 17.0939
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[134,185,210,235,52,286,30,245,88,112,231,184],"learningFactor":-0.19691,"numOfWorkers":2}
+CMAX = 763.849
+BEST BUNCH = {[30, 88, 134, 231, 235, 286], [52, 112, 184, 185, 210, 245]}
+DURATION (milliseconds) = 1.56076e+06
+
+Testing DPStrategy2Machines: {"jobs":[134,185,210,235,52,286,30,245,88,112,231,184],"learningFactor":-0.19691,"numOfWorkers":2}
+CMAX = 763.849
+BEST BUNCH = {[30, 88, 134, 231, 235, 286], [52, 112, 184, 185, 210, 245]}
+DURATION (milliseconds) = 21.4222
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[256,132,244,267,79,6,119,199,231,11,170,26],"learningFactor":-0.34723,"numOfWorkers":2}
+CMAX = 526.366
+BEST BUNCH = {[6, 79, 132, 170, 231, 244], [11, 26, 119, 199, 256, 267]}
+DURATION (milliseconds) = 1.5558e+06
+
+Testing DPStrategy2Machines: {"jobs":[256,132,244,267,79,6,119,199,231,11,170,26],"learningFactor":-0.34723,"numOfWorkers":2}
+CMAX = 526.366
+BEST BUNCH = {[6, 79, 132, 170, 231, 244], [11, 26, 119, 199, 256, 267]}
+DURATION (milliseconds) = 14.0305
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[145,269,280,212,215,242,19,23,258,104,149,64],"learningFactor":-0.90171,"numOfWorkers":2}
+CMAX = 295.829
+BEST BUNCH = {[19, 104, 145, 212, 215, 280], [23, 64, 149, 242, 258, 269]}
+DURATION (milliseconds) = 1.5493e+06
+
+Testing DPStrategy2Machines: {"jobs":[145,269,280,212,215,242,19,23,258,104,149,64],"learningFactor":-0.90171,"numOfWorkers":2}
+CMAX = 295.829
+BEST BUNCH = {[19, 104, 145, 212, 215, 280], [23, 64, 149, 242, 258, 269]}
+DURATION (milliseconds) = 13.9662
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[104,217,133,262,91,144,253,85,250,89,77,126],"learningFactor":-0.23481,"numOfWorkers":2}
+CMAX = 675.901
+BEST BUNCH = {[77, 91, 133, 144, 217, 253], [85, 89, 104, 126, 250, 262]}
+DURATION (milliseconds) = 1.59869e+06
+
+Testing DPStrategy2Machines: {"jobs":[104,217,133,262,91,144,253,85,250,89,77,126],"learningFactor":-0.23481,"numOfWorkers":2}
+CMAX = 675.901
+BEST BUNCH = {[77, 91, 133, 144, 217, 253], [85, 89, 104, 126, 250, 262]}
+DURATION (milliseconds) = 24.5677
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[56,45,198,263,7,67,93,238,165,146,129,52],"learningFactor":-0.06674,"numOfWorkers":2}
+CMAX = 663.163
+BEST BUNCH = {[7, 56, 67, 165, 198, 238], [45, 52, 93, 129, 146, 263]}
+DURATION (milliseconds) = 1.57905e+06
+
+Testing DPStrategy2Machines: {"jobs":[56,45,198,263,7,67,93,238,165,146,129,52],"learningFactor":-0.06674,"numOfWorkers":2}
+CMAX = 663.163
+BEST BUNCH = {[7, 56, 67, 165, 198, 238], [45, 52, 93, 129, 146, 263]}
+DURATION (milliseconds) = 14.2108
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[292,224,178,69,59,122,29,159,118,148,38,9],"learningFactor":-0.21262,"numOfWorkers":2}
+CMAX = 531.39
+BEST BUNCH = {[9, 59, 69, 122, 178, 292], [29, 38, 118, 148, 159, 224]}
+DURATION (milliseconds) = 1.5803e+06
+
+Testing DPStrategy2Machines: {"jobs":[292,224,178,69,59,122,29,159,118,148,38,9],"learningFactor":-0.21262,"numOfWorkers":2}
+CMAX = 531.39
+BEST BUNCH = {[9, 59, 69, 122, 178, 292], [29, 38, 118, 148, 159, 224]}
+DURATION (milliseconds) = 15.6788
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[137,253,132,262,83,225,78,40,241,119,219,48],"learningFactor":-0.26563,"numOfWorkers":2}
+CMAX = 641.763
+BEST BUNCH = {[40, 78, 119, 219, 225, 241], [48, 83, 132, 137, 253, 262]}
+DURATION (milliseconds) = 1.61399e+06
+
+Testing DPStrategy2Machines: {"jobs":[137,253,132,262,83,225,78,40,241,119,219,48],"learningFactor":-0.26563,"numOfWorkers":2}
+CMAX = 641.763
+BEST BUNCH = {[40, 78, 119, 219, 225, 241], [48, 83, 132, 137, 253, 262]}
+DURATION (milliseconds) = 14.1125
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[297,61,12,39,79,53,94,15,244,58,171,135],"learningFactor":-0.33951,"numOfWorkers":2}
+CMAX = 381.002
+BEST BUNCH = {[12, 58, 61, 79, 171, 244], [15, 39, 53, 94, 135, 297]}
+DURATION (milliseconds) = 1.57869e+06
+
+Testing DPStrategy2Machines: {"jobs":[297,61,12,39,79,53,94,15,244,58,171,135],"learningFactor":-0.33951,"numOfWorkers":2}
+CMAX = 381.002
+BEST BUNCH = {[12, 58, 61, 79, 171, 244], [15, 39, 53, 94, 135, 297]}
+DURATION (milliseconds) = 15.2015
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[54,213,57,262,274,242,80,130,224,115,173,201],"learningFactor":-0.37409,"numOfWorkers":2}
+CMAX = 619.66
+BEST BUNCH = {[54, 115, 130, 213, 224, 274], [57, 80, 173, 201, 242, 262]}
+DURATION (milliseconds) = 1.59145e+06
+
+Testing DPStrategy2Machines: {"jobs":[54,213,57,262,274,242,80,130,224,115,173,201],"learningFactor":-0.37409,"numOfWorkers":2}
+CMAX = 619.66
+BEST BUNCH = {[54, 115, 130, 213, 224, 274], [57, 80, 173, 201, 242, 262]}
+DURATION (milliseconds) = 21.2364
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[52,263,239,137,130,265,180,138,59,203,97,208],"learningFactor":-0.76759,"numOfWorkers":2}
+CMAX = 379.957
+BEST BUNCH = {[52, 137, 138, 180, 203, 265], [59, 97, 130, 208, 239, 263]}
+DURATION (milliseconds) = 1.60158e+06
+
+Testing DPStrategy2Machines: {"jobs":[52,263,239,137,130,265,180,138,59,203,97,208],"learningFactor":-0.76759,"numOfWorkers":2}
+CMAX = 379.957
+BEST BUNCH = {[52, 137, 138, 180, 203, 265], [59, 97, 130, 208, 239, 263]}
+DURATION (milliseconds) = 14.3513
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[16,24,247,80,255,219,150,88,33,121,59,158],"learningFactor":-0.97506,"numOfWorkers":2}
+CMAX = 190.397
+BEST BUNCH = {[16, 33, 88, 150, 219, 247], [24, 59, 80, 121, 158, 255]}
+DURATION (milliseconds) = 1.63044e+06
+
+Testing DPStrategy2Machines: {"jobs":[16,24,247,80,255,219,150,88,33,121,59,158],"learningFactor":-0.97506,"numOfWorkers":2}
+CMAX = 190.397
+BEST BUNCH = {[16, 33, 88, 150, 219, 247], [24, 59, 80, 121, 158, 255]}
+DURATION (milliseconds) = 16.4461
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[117,184,174,2,54,13,216,208,200,51,243,115],"learningFactor":-0.07095,"numOfWorkers":2}
+CMAX = 711.745
+BEST BUNCH = {[2, 54, 117, 174, 200, 243], [13, 51, 115, 184, 208, 216]}
+DURATION (milliseconds) = 1.60333e+06
+
+Testing DPStrategy2Machines: {"jobs":[117,184,174,2,54,13,216,208,200,51,243,115],"learningFactor":-0.07095,"numOfWorkers":2}
+CMAX = 711.745
+BEST BUNCH = {[2, 54, 117, 174, 200, 243], [13, 51, 115, 184, 208, 216]}
+DURATION (milliseconds) = 14.556
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[263,126,77,160,296,21,9,6,235,202,50,251],"learningFactor":-0.05089,"numOfWorkers":2}
+CMAX = 786.662
+BEST BUNCH = {[6, 50, 77, 202, 251, 263], [9, 21, 126, 160, 235, 296]}
+DURATION (milliseconds) = 1.63225e+06
+
+Testing DPStrategy2Machines: {"jobs":[263,126,77,160,296,21,9,6,235,202,50,251],"learningFactor":-0.05089,"numOfWorkers":2}
+CMAX = 786.662
+BEST BUNCH = {[6, 50, 77, 202, 251, 263], [9, 21, 126, 160, 235, 296]}
+DURATION (milliseconds) = 14.9101
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[100,91,115,160,235,190,297,81,123,11,163,250],"learningFactor":-0.09375,"numOfWorkers":2}
+CMAX = 799.846
+BEST BUNCH = {[11, 81, 115, 163, 250, 297], [91, 100, 123, 160, 190, 235]}
+DURATION (milliseconds) = 1.62819e+06
+
+Testing DPStrategy2Machines: {"jobs":[100,91,115,160,235,190,297,81,123,11,163,250],"learningFactor":-0.09375,"numOfWorkers":2}
+CMAX = 799.846
+BEST BUNCH = {[11, 81, 115, 163, 250, 297], [91, 100, 123, 160, 190, 235]}
+DURATION (milliseconds) = 14.058
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[180,221,22,271,30,151,219,47,239,289,100,37],"learningFactor":-0.10035,"numOfWorkers":2}
+CMAX = 781.43
+BEST BUNCH = {[22, 37, 100, 219, 239, 289], [30, 47, 151, 180, 221, 271]}
+DURATION (milliseconds) = 1.59965e+06
+
+Testing DPStrategy2Machines: {"jobs":[180,221,22,271,30,151,219,47,239,289,100,37],"learningFactor":-0.10035,"numOfWorkers":2}
+CMAX = 781.43
+BEST BUNCH = {[22, 37, 100, 219, 239, 289], [30, 47, 151, 180, 221, 271]}
+DURATION (milliseconds) = 15.4506
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[257,75,50,271,290,113,195,218,202,278,205,120],"learningFactor":-0.5422,"numOfWorkers":2}
+CMAX = 569.561
+BEST BUNCH = {[50, 120, 202, 218, 271, 290], [75, 113, 195, 205, 257, 278]}
+DURATION (milliseconds) = 1.57545e+06
+
+Testing DPStrategy2Machines: {"jobs":[257,75,50,271,290,113,195,218,202,278,205,120],"learningFactor":-0.5422,"numOfWorkers":2}
+CMAX = 569.561
+BEST BUNCH = {[50, 120, 202, 218, 271, 290], [75, 113, 195, 205, 257, 278]}
+DURATION (milliseconds) = 14.4782
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[252,273,251,226,74,206,128,179,69,174,242,12],"learningFactor":-0.15986,"numOfWorkers":2}
+CMAX = 840.862
+BEST BUNCH = {[12, 128, 179, 206, 251, 273], [69, 74, 174, 226, 242, 252]}
+DURATION (milliseconds) = 1.52404e+06
+
+Testing DPStrategy2Machines: {"jobs":[252,273,251,226,74,206,128,179,69,174,242,12],"learningFactor":-0.15986,"numOfWorkers":2}
+CMAX = 840.862
+BEST BUNCH = {[12, 128, 179, 206, 251, 273], [69, 74, 174, 226, 242, 252]}
+DURATION (milliseconds) = 14.0611
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[48,278,231,97,274,54,109,282,258,113,298,173],"learningFactor":-0.23627,"numOfWorkers":2}
+CMAX = 804.851
+BEST BUNCH = {[48, 97, 173, 231, 274, 282], [54, 109, 113, 258, 278, 298]}
+DURATION (milliseconds) = 1.52525e+06
+
+Testing DPStrategy2Machines: {"jobs":[48,278,231,97,274,54,109,282,258,113,298,173],"learningFactor":-0.23627,"numOfWorkers":2}
+CMAX = 804.851
+BEST BUNCH = {[48, 97, 173, 231, 274, 282], [54, 109, 113, 258, 278, 298]}
+DURATION (milliseconds) = 15.3845
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[243,256,6,138,169,105,204,195,180,194,185,120],"learningFactor":-0.37028,"numOfWorkers":2}
+CMAX = 625.101
+BEST BUNCH = {[6, 138, 194, 195, 243, 256], [105, 120, 169, 180, 185, 204]}
+DURATION (milliseconds) = 1.52022e+06
+
+Testing DPStrategy2Machines: {"jobs":[243,256,6,138,169,105,204,195,180,194,185,120],"learningFactor":-0.37028,"numOfWorkers":2}
+CMAX = 625.101
+BEST BUNCH = {[6, 138, 194, 195, 243, 256], [105, 120, 169, 180, 185, 204]}
+DURATION (milliseconds) = 14.1019
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[7,205,255,287,67,204,127,294,94,299,52,19],"learningFactor":-0.55771,"numOfWorkers":2}
+CMAX = 427.507
+BEST BUNCH = {[7, 67, 94, 204, 294, 299], [19, 52, 127, 205, 255, 287]}
+DURATION (milliseconds) = 1.52437e+06
+
+Testing DPStrategy2Machines: {"jobs":[7,205,255,287,67,204,127,294,94,299,52,19],"learningFactor":-0.55771,"numOfWorkers":2}
+CMAX = 427.507
+BEST BUNCH = {[7, 67, 94, 204, 294, 299], [19, 52, 127, 205, 255, 287]}
+DURATION (milliseconds) = 19.0702
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[95,160,84,172,99,8,54,152,128,67,281,177],"learningFactor":-0.95404,"numOfWorkers":2}
+CMAX = 219.466
+BEST BUNCH = {[8, 84, 95, 172, 177, 281], [54, 67, 99, 128, 152, 160]}
+DURATION (milliseconds) = 1.52389e+06
+
+Testing DPStrategy2Machines: {"jobs":[95,160,84,172,99,8,54,152,128,67,281,177],"learningFactor":-0.95404,"numOfWorkers":2}
+CMAX = 219.466
+BEST BUNCH = {[8, 84, 95, 172, 177, 281], [54, 67, 99, 128, 152, 160]}
+DURATION (milliseconds) = 14.394
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[110,291,116,5,157,296,70,290,187,94,181,114],"learningFactor":-0.93542,"numOfWorkers":2}
+CMAX = 287.925
+BEST BUNCH = {[5, 110, 157, 181, 290, 296], [70, 94, 114, 116, 187, 291]}
+DURATION (milliseconds) = 1.52186e+06
+
+Testing DPStrategy2Machines: {"jobs":[110,291,116,5,157,296,70,290,187,94,181,114],"learningFactor":-0.93542,"numOfWorkers":2}
+CMAX = 287.925
+BEST BUNCH = {[5, 110, 157, 181, 290, 296], [70, 94, 114, 116, 187, 291]}
+DURATION (milliseconds) = 14.4361
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[224,86,183,162,110,30,74,2,204,21,287,50],"learningFactor":-0.03063,"numOfWorkers":2}
+CMAX = 684.538
+BEST BUNCH = {[2, 30, 74, 183, 204, 224], [21, 50, 86, 110, 162, 287]}
+DURATION (milliseconds) = 1.52337e+06
+
+Testing DPStrategy2Machines: {"jobs":[224,86,183,162,110,30,74,2,204,21,287,50],"learningFactor":-0.03063,"numOfWorkers":2}
+CMAX = 684.538
+BEST BUNCH = {[2, 30, 74, 183, 204, 224], [21, 50, 86, 110, 162, 287]}
+DURATION (milliseconds) = 16.2712
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[265,38,133,183,57,169,184,36,21,126,11,54],"learningFactor":-0.00012,"numOfWorkers":2}
+CMAX = 638.887
+BEST BUNCH = {[11, 38, 54, 169, 183, 184], [21, 36, 57, 126, 133, 265]}
+DURATION (milliseconds) = 1.53291e+06
+
+Testing DPStrategy2Machines: {"jobs":[265,38,133,183,57,169,184,36,21,126,11,54],"learningFactor":-0.00012,"numOfWorkers":2}
+CMAX = 638.887
+BEST BUNCH = {[11, 38, 54, 169, 183, 184], [21, 36, 57, 126, 133, 265]}
+DURATION (milliseconds) = 14.0247
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[272,63,50,197,279,202,242,234,211,22,193,125],"learningFactor":-0.39227,"numOfWorkers":2}
+CMAX = 618.641
+BEST BUNCH = {[22, 125, 193, 197, 234, 272], [50, 63, 202, 211, 242, 279]}
+DURATION (milliseconds) = 1.52926e+06
+
+Testing DPStrategy2Machines: {"jobs":[272,63,50,197,279,202,242,234,211,22,193,125],"learningFactor":-0.39227,"numOfWorkers":2}
+CMAX = 618.641
+BEST BUNCH = {[22, 125, 193, 197, 234, 272], [50, 63, 202, 211, 242, 279]}
+DURATION (milliseconds) = 19.1566
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[268,225,250,128,51,256,1,135,149,243,58,16],"learningFactor":-0.30694,"numOfWorkers":2}
+CMAX = 573.127
+BEST BUNCH = {[1, 51, 128, 225, 243, 250], [16, 58, 135, 149, 256, 268]}
+DURATION (milliseconds) = 1.54077e+06
+
+Testing DPStrategy2Machines: {"jobs":[268,225,250,128,51,256,1,135,149,243,58,16],"learningFactor":-0.30694,"numOfWorkers":2}
+CMAX = 573.127
+BEST BUNCH = {[1, 51, 128, 225, 243, 250], [16, 58, 135, 149, 256, 268]}
+DURATION (milliseconds) = 14.0376
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[245,117,206,162,174,179,219,79,13,135,246,297],"learningFactor":-0.99796,"numOfWorkers":2}
+CMAX = 308.625
+BEST BUNCH = {[13, 162, 179, 219, 246, 297], [79, 117, 135, 174, 206, 245]}
+DURATION (milliseconds) = 1.5568e+06
+
+Testing DPStrategy2Machines: {"jobs":[245,117,206,162,174,179,219,79,13,135,246,297],"learningFactor":-0.99796,"numOfWorkers":2}
+CMAX = 308.625
+BEST BUNCH = {[13, 162, 179, 219, 246, 297], [79, 117, 135, 174, 206, 245]}
+DURATION (milliseconds) = 13.9853
+
+PASSED!
+--------------------------------------------------------------------------------
+Testing CompleteSearchStrategy: {"jobs":[150,38,134,269,73,9,235,127,39,147,74,20],"learningFactor":-0.88724,"numOfWorkers":2}
+CMAX = 188.395
+BEST BUNCH = {[9, 39, 74, 134, 150, 269], [20, 38, 73, 127, 147, 235]}
+DURATION (milliseconds) = 1.54035e+06
+
+Testing DPStrategy2Machines: {"jobs":[150,38,134,269,73,9,235,127,39,147,74,20],"learningFactor":-0.88724,"numOfWorkers":2}
+CMAX = 188.395
+BEST BUNCH = {[9, 39, 74, 134, 150, 269], [20, 38, 73, 127, 147, 235]}
+DURATION (milliseconds) = 14.1769
+
+PASSED!
+--------------------------------------------------------------------------------
+PASSED: 100/100, FAILED: 0/100

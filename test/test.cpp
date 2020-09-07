@@ -13,6 +13,7 @@ int main() {
     ifstream testsPayload("test/resources/testsPayload.json");
     testsPayload >> tests;
     int passed = 0, failed = 0;
+    float completeSearchStrategyRuntimeAvg = 0, DPStrategyRuntimeAvg = 0;
 
     for (auto& test: tests) {
         int numOfWorkers = test["numOfWorkers"].get<int>();
@@ -33,9 +34,12 @@ int main() {
             cout << "CMAX = " << strategy->getCMax() 
                 << "\nBEST BUNCH = " << strategy->getBestBunch() 
                 << "\nDURATION (milliseconds) = " << timeSpan.count() * 1000 << endl << endl;
-            if (!strategy->getName().find("CompleteSearchStrategy")) 
+            if (!strategy->getName().find("CompleteSearchStrategy")) {
                 tmpBunches = strategy->getBestBunch();
+                completeSearchStrategyRuntimeAvg += (timeSpan.count() * 1000 / tests.size());
+            }
             else {
+                DPStrategyRuntimeAvg += (timeSpan.count() * 1000 / tests.size());
                 if (strategy->getBestBunch()[0] == tmpBunches[0] || 
                     strategy->getBestBunch()[0] == tmpBunches[1]) { 
                     passed++;
@@ -48,8 +52,12 @@ int main() {
             }
         }
         cout << string(80, '-') << endl;
-    }   
+    }  
+    cout << "TEST SUIT SUMMARY" << endl <<
+        string(80, '-') << endl;
     cout << "PASSED: " << passed << "/" << tests.size() 
         << ", FAILED: " << failed << "/" << tests.size() << endl;
+    cout << "RUNTIME AVERAGE (milliseconds):" << endl << "CompleteSearchStrategy: " << completeSearchStrategyRuntimeAvg <<
+        ", DPStrategy2Machines: " << DPStrategyRuntimeAvg << endl;
     return tests.size() - passed;
 }

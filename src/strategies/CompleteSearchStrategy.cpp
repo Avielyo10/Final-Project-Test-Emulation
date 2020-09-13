@@ -16,15 +16,17 @@ void CompleteSearchStrategy::split() {
     else {
         sort(jobs.begin(), jobs.end());
         do {
-            vector<vector<int>> bunches = splitIntoSubVectors(numOfWorkers, numOfJobs, jobs);
-            float tmpCMax = INT_MIN;
-            for(auto const& job : bunches) {
-                float cMaxFromWorker = Worker(job).work(this -> getLearningFactor());
-                if (cMaxFromWorker > tmpCMax) tmpCMax = cMaxFromWorker;
-            }
-            if (tmpCMax < cMax) {
-                cMax = tmpCMax;
-                bestBunch = bunches;
+            vector<vector<vector<int>>> subVectors = splitIntoSubVectors(numOfWorkers, numOfJobs, jobs);
+            for (auto const& bunches: subVectors) {
+                float cMax1 = Worker(bunches[0]).work(this -> getLearningFactor());
+                float cMax2 = Worker(bunches[1]).work(this -> getLearningFactor());
+                if (cMax1 > cMax2 && cMax1 < cMax) {
+                    cMax = cMax1;
+                    bestBunch = bunches;
+                } else if (cMax2 > cMax1 && cMax2 < cMax) {
+                    cMax = cMax2;
+                    bestBunch = bunches;
+                }
             }
         } while (next_permutation(jobs.begin(), jobs.end())); 
     }
@@ -36,19 +38,14 @@ string CompleteSearchStrategy::getName() {
     return "CompleteSearchStrategy";
 }
 
-vector<vector<int>> CompleteSearchStrategy::splitIntoSubVectors(int numOfWorkers, int numOfJobs, vector<int> permutation) {
-    int remJobs = numOfWorkers - (numOfJobs % numOfWorkers);
-    int bunchSize = numOfJobs / numOfWorkers;
-    int index = 0;
-
-    vector<vector<int>> bunches(numOfWorkers);
-    for(size_t i = 0; i < permutation.size(); i += bunchSize) { 
-        remJobs--;
-        if (remJobs == 0) bunchSize += 1;
-        auto last = min(permutation.size(), i + bunchSize);
-        auto& vec = bunches[index++];
-        vec.reserve(last - i);
-        move(permutation.begin() + i, permutation.begin() + last, back_inserter(vec));  
+vector<vector<vector<int>>> CompleteSearchStrategy::splitIntoSubVectors(int numOfWorkers, int numOfJobs, vector<int> permutation) {
+    vector<vector<vector<int>>> subVectors;
+    size_t iter = 0;
+    while (iter < permutation.size()){
+        vector<int> jobA(permutation.begin(), permutation.begin() + iter);
+        vector<int> jobB(permutation.begin() + iter, permutation.end());
+        subVectors.push_back(vector<vector<int>> {jobA, jobB});
+        iter++;
     }
-    return bunches;
+    return subVectors;
 }

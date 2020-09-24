@@ -10,5 +10,5 @@ public:
     CompleteSearchStrategy(int, vector<int>, float);
     void split();
     string getName();
-    vector<vector<int>> splitIntoSubVectors(int, int, vector<int>);
+    vector<vector<vector<int>>> splitIntoSubVectors(int, int, vector<int>);
 };
